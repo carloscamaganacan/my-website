@@ -15,7 +15,7 @@ header h1 {
 	text-align: center;
 	text-shadow: 2px 2px 4px var(--color-1);
     color: #ffffff; }
-	header h2 {
+header h2 {
 	font-size: 175%;
 	text-align: left;
 	color: #ffffff; }

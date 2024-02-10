@@ -1,50 +1,23 @@
-/* the styles for the elements */
-* {
-	margin: 0;
-	padding: 10;
-}
-:root { --color-1: #f2972e;
-        --color-2: #135e17;
-		--color-3: white;
-		--color-4: darkblue;
-		--color-5: blue; }
+*{ margin: 0;
+   padding: 0;
+   height: max-content;}
+   :root { --color-1: #f2972e;
+	--color-2: #135e17;
+	--color-3: white;
+	--color-4: darkblue;
+	--color-5: blue; }
 html {
-	background-color: rgb(255, 255, 255); }
-body {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	text-size-adjust: 100%;
-	box-sizing:content-box;
-    margin: 0 0;
-    border: 20px solid;
-	background-image: url("images/Cavite_Cavaliers_Group.jpg"); }
-a:focus, a:hover {
-	font-style: italic; }
-a:link { color: #135e17;}
-a:hover, a:focus { color: #ff00ff;}
-#nav_menu ul {list-style-type: none;}
-#nav_menu ul li {float: left;}
-#nav_menu ul li a {
-	text-align: center;
-	display: block;
-	width: 175px;
-	padding: 1em 0;
-	text-decoration: none;
-	background-color: blue;
-	color: white;
-	font-weight: bold;
-	border-right: 2px solid white; }
-#nav_menu ul li a.lastitem {list-style-type: none;}
-#nav_menu ul li a.current{color: yellow}
+background-color: rgb(255, 255, 255); }
 
-/* the styles for the header */
+/* the styles for the elements */
 header {
 	background-color: #135e17;
 	font-size: 15px;
 	text-align: left;
-	padding: 0 0 2em #135e17; 
-	border-bottom: 3px solid #135e17; }
+	padding: 0 0 10em #135e17;
+	border-bottom: 3px solid #135e17;}
 header h1 {
-	font-size: 200%;
+	font-size: 300%;
 	line-height: 1.5;
 	text-align: center;
 	text-shadow: 2px 2px 4px var(--color-1);
@@ -55,32 +28,28 @@ header h2 {
 	color: #ffffff; }
 header h3 {
 	font-size: 130%;
-	line-height: 2;
+	line-height: 3;
 	text-align: center;
-	font-style: italic; /* STYLE FONTS */
-	color: #ffffff; }
+    color: #ffffff;
+	font-style: italic;}
 header img {
 	float: left;
-	padding: 10 100px; }
+	padding: 20 200px; }
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-size-adjust: 100%;
+    box-sizing:content-box;
+    margin: 0 0;
+    border: 20px solid;
+    background: url("images/Background_Image.jpg") no-repeat scroll center top;}
 p {
 	font-size: 95%;
 	padding: .25em 0;
 	color: #ffffff; }
-
-/* the styles for the main content */
-main {clear: left; }
-main h1 {
-	font-size: 170%;
-	line-height: 2; }
-main h3 {
-	line-height: 1.5;
-	font-size: 130%;
-	font-style: bold;
-	color: var(--color-3); }
 /* the styles for the sidebar */
 aside {
-	width: 350px;
-	float: right;
+	width: 450px;
+	float: left;
 	padding: 20px;
 	background-color: #ffebc6;
 	margin-right: 20px; }
