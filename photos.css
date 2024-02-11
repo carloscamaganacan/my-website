@@ -1,48 +1,44 @@
-:root { --color-1: #f2972e;
+:root{
+	--color-1: #f2972e;
     --color-2: #135e17;
-    --color-3: white;
-    --color-4: darkblue;
-    --color-5: blue; }
+    --color-3: #ffffff; }
+/* the styles for the elements */
 header {
-    background-color: #135e17;
+    background-color: var(--color-2);
 	font-size: 15px;
 	text-align: left;
-	padding: 0 0 10em #135e17; 
-	border-bottom: 3px solid #135e17; }
+	padding: 0 0 10em var(--color-2);
+	border-bottom: 3px solid var(--color-2); }
 header h1 {
 	font-size: 300%;
 	line-height: 1.5;
 	text-align: center;
 	text-shadow: 2px 2px 4px var(--color-1);
-    color: #ffffff; }
-	header h2 {
+    color: var(--color-3); }
+header h2 {
 	font-size: 175%;
-	text-align: left;
-	color: #ffffff; }
+	text-align: center;
+	color: var(--color-3); }
 header h3 {
-	font-size: 130%;
+	font-size: 150%;
 	line-height: 3;
 	text-align: center;
-    color: #ffffff; 
-	font-style: italic;}
+    color: var(--color-3);
+	font-style: italic; }
 header img {
 	float: left;
-	padding: 20 200px; } 
+	padding: 20 200px; }
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;}
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;}
-input[type="text"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;}
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;}
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-size-adjust: 100%;
+    margin: 0 0;
+    padding: 0; }
+/* the styles for the footer */
+footer {
+	background-color: var(--color-2);
+	clear: both; }
+/* RELATIONAL SELECTOR */
+footer p {
+	text-align: center;
+	color: var(--color-3);
+	padding: 1em 0; }
