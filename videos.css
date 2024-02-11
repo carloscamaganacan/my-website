@@ -33,7 +33,28 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-size-adjust: 100%;
     margin: 0 0;
-    padding: 0; }
+    padding: 0;      }
+.centered { text-align:center; }
+/* Flexbox to display the menu vertically */
+ul {
+	display:flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0;
+	margin: 0; }
+li {
+	background: var(--color-6);
+	width: 150px;
+    margin: 0 15px 15px 0;
+    padding: 5px;
+	text-align: center; }
+a  {
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--color-2); }
+	#nav_menu ul li a.current {color: var(--color-4);}
+	#nav_menu ul li a:hover, #nav_menu ul li a:focus {color: var(--color-3);
+	background-color: var(--color-2); }
 /* the styles for the footer */
 footer {
 	background-color: var(--color-2);
