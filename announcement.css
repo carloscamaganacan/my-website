@@ -81,6 +81,8 @@ font-size: 130%;
 padding-bottom: .5em; }
 aside h3 {
 font-size: 100%;
+text-align: center;
+font-weight:normal;
 color: var(--color-5); }
 aside p {
     color: var(--color-5);
