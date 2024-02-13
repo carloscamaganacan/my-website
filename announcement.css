@@ -1,6 +1,6 @@
 :root {
 	--color-1: #f2972e;
-	--color-2: #135e17e9;
+	--color-2: #135e17;
 	--color-3: #ffffff;
 	--color-4: #941421;
 	--color-5: #000;
@@ -13,8 +13,8 @@ header {
 	font-size: 15px;
 	text-align: left;
 	padding: 0 0 10em var(--color-2);
-	border-bottom: 3px solid var(--color-2);}
-header h1{
+	border-bottom: 3px solid var(--color-2); }
+header h1 {
 	font-size: 300%;
 	line-height: 1.5;
 	text-align: center;
@@ -23,17 +23,18 @@ header h1{
 header h2 {
 	font-size: 175%;
 	text-align: center;
-	color: var(--color-3); }
+	color: 	var(--color-3); }
 header h3 {
 	font-size: 150%;
 	line-height: 3;
 	text-align: center;
     color: var(--color-3);
-	font-style: italic;}
+	font-style: italic; }
 header img {
 	float: left;
 	padding: 20 200px; }
-/* Flexbox to display the menu vertically */
+/*Flexbox to display the menu horizontally*/
+#nav_menu{
 ul {
 	display:flex;
 	flex-direction: row;
@@ -50,30 +51,40 @@ a  {
 	text-decoration: none;
 	font-weight: normal;
 	color: var(--color-2); }
+}	
 /* navigation menu styles*/
 #nav_menu ul li.lastitem a{width: 178px;}
 #nav_menu ul li a.current {color: var(--color-8);}
-#nav_menu ul li a:hover, #nav_menu ul li a:focus {color: var(--color-3); background-color: var(--color-2); } 
-/* the styles for the sidebar */
-body {
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {color: var(--color-3); background-color: var(--color-2); }
+
+/* the styles for the body */
+body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;}
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;}
-input[type="text"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;}
-input[type="submit"] {
-    background-color: var(--color-5);
-    color: var(--color-3);
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;}
-/* the styles for the footer */
+	text-size-adjust: 100%;
+    margin: 0 0;
+    padding: 0}
+/* the styles for the aside */
+aside {
+    width: auto;
+    height: auto;
+    float: left;
+    padding: 20px;
+    background-color: var(--color-7);
+}
+aside h4 {
+ 	color: var(--color-8);
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;}
+aside h2 {
+font-size: 130%;
+padding-bottom: .5em; }
+aside h3 {
+font-size: 100%;
+color: var(--color-5); }
+aside p {
+    color: var(--color-5);
+    padding-bottom: .5em;}
 footer {
 	background-color: var(--color-2);
 	clear: both; }

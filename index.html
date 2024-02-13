@@ -7,28 +7,42 @@
     <meta name="description" content="The Cavite Cavaliers Drum & Bugle Corps is a non-profit community marching band based in Cavite City, Philippines.">
     <title>CIS155: My Web Site Project</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+</script>
 </head>
 <body>
     <header>
         <img src="images/Cavite_Cavaliers_LOGO.png" alt="Cavite Cavaliers DBC Logo" width="180">
-        <h1>The Cavite Cavaliers Drum and Bugle Corps</h1>
+        <h1>Cavite Cavaliers Drum and Bugle Corps</h1>
         <h3>Unity in Diversity</h3>
     </header>
-    <aside>
-        <h2>Our Mission</h2>
-        <p>"The Cavite Cavaliers Drum and Bugle Corps is a non-profit community marching band based in Cavite City, Philippines. The band was organized in August 2018 with a specific purpose of providing accessible opportunities for individuals of all ages and backgrounds to engage in the art of marching band. Through comprehensive music education, dynamic performances, and community outreach initiatives, we aim to inspire, educate, and entertain while fostering a sense of unity and pride among our members. Committed to inclusivity and excellence, we strive to cultivate a supportive environment where passion for music flourishes, friendships are forged, and lifelong memories are created. Together, we march towards a harmonious future where the transformative power of music unites and uplifts our community." </p>     
-    </aside>
     <main>
+        <nav id="mobile_menu"></nav>
         <nav id="nav_menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="videos.html" class="current">Video Gallery </a></li>
-                <li><a href="https://www.facebook.com/cavitecavaliersdrumandbuglecorps/" target="_blank">Facebook Link</a></li>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="videos.html">Video Gallery </a></li>
                 <li><a href="photo_gallery.html">Photo Gallery </a></li>
+                <li><a href="announcement.html">Announcement</a></li>
+                <li><a href="https://www.facebook.com/cavitecavaliersdrumandbuglecorps/" target="_blank">Facebook Link</a></li>
+                <li><a href="about_us.html">About Us</a></li>
                 <li><a href="contact_us.html" class="lastitem">Contact Us</a></li>
             </ul>
         </nav>
     </main>
+    <aside>
+        <h1>Welcome !</h1>
+        <p>"The Cavite Cavaliers Drum and Bugle Corps is a non-profit community marching band based in Cavite City, Philippines.  Established in August 2018 by a group of musicians and former marching band members with a specific purpose of providing accessible opportunities for individuals of all ages and backgrounds to engage in the art of marching band.</p>
+        <h1>Our Mission</h1>
+        <p>"Our non-profit community marching band is dedicated to fostering musical excellence, camaraderie, and community pride through the art of marching band performance. Committed to inclusivity and accessibility, we provide opportunities for individuals of all ages and backgrounds to participate in a supportive and enriching musical environment. By promoting teamwork, discipline, and creativity, we strive to inspire our members to achieve personal and collective success both on and off the field. Through engaging performances and community outreach, we aim to enhance the cultural vibrancy and unity of our local community while fostering a lifelong appreciation for music and the performing arts."</p>
+        <img src="images/AnotherYear.jpg" alt="Cavite Cavaliers DBC Artwork" width="445" height="260">
+    </aside>
     <footer>
         <p> &copy; Carlos Camaganacan 2024</p>
     </footer>
