@@ -9,30 +9,29 @@
     --color-8: #00008b; }
 /* the styles for the elements */
 header {
-    background-color: var(--color-2);
+	background-color: var(--color-2);
 	font-size: 15px;
 	text-align: left;
-	padding: 0 0 10em var(--color-2);
-	border-bottom: 3px solid var(--color-2); }
+    padding: 0 0 10em var(--color-2);
+	border-bottom: 3px solid var(--color-2);}
 header h1 {
-	font-size: 300%;
-	line-height: 1.5;
+	font: 200 normal 400% Impact;
+	line-height: 2;
 	text-align: center;
 	text-shadow: 2px 2px 4px var(--color-1);
     color: var(--color-3); }
 header h2 {
 	font-size: 175%;
 	text-align: center;
-	color: var(--color-3); }
+	color: 	var(--color-3); }
 header h3 {
-	font-size: 150%;
-	line-height: 3;
+	font: italic 200 normal 250% Script;
+	line-height: 0;
 	text-align: center;
-    color: var(--color-3);
-	font-style: italic; }
+    color: var(--color-3); }
 header img {
 	float: left;
-	padding: 20 200px; }
+	padding: 20 200px;}
 /* Flexbox to display the menu horizontaly */
 ul {
 	display:flex;
