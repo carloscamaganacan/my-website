@@ -4,35 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event</title>
+    <title>Announcement</title>
     <link rel="stylesheet" href="announcement.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
 </head>
 
 <body>
     <header>
         <img src="images/Cavite_Cavaliers_LOGO.png" alt="Cavite Cavaliers DBC Logo" width="180">
-        <h1>Cavite Cavaliers Drum and Bugle Corps</h1>
+        <h1>CAVITE CAVALIERS</h1>
+        <h2>DRUM AND BUGLE CORPS</h2>
         <h3>"Unity in Diversity"</h3>
     </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="videos.html">Video Gallery</a></li>
+            <li><a href="photo_gallery.html">Photo Gallery</a></li>
+            <li><a href="https://www.facebook.com/cavitecavaliersdrumandbuglecorps/" target="_blank">Facebook
+                    Link</a></li>
+            <li><a href="announcement.html" class="current">Announcement</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html" class="lastitem">Contact Us</a></li>
+        </ul>
+    </nav>
     <main>
-        <nav id="nav_menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="videos.html">Video Gallery</a></li>
-                <li><a href="photo_gallery.html">Photo Gallery</a></li>
-                <li><a href="https://www.facebook.com/cavitecavaliersdrumandbuglecorps/" target="_blank">Facebook
-                        Link</a></li>
-                <li><a href="announcement.html" class="current">Announcement</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="contact_us.html" class="lastitem">Contact Us</a></li>
-            </ul>
-        </nav>
-        <img src="images/Cavite_Marching_Bands_Logos.jpg" alt="Marching Bands of Cavite Poster" width="400"
-            height="500">
-        <img src="images/5th_Anniversary.jpg" alt="Cavite Cavaliers DBC 5th Anniversary Poster" width="400"
-            height="500">
-        <img src="images/Cavite_City_Fiesta_2022.jpg" alt="Cavite City Fiesta 2022 Poster" width="400" height="500">
-        <img src="images/Musiko2019.jpg" alt="Musiko 2019 Poster" width="400" height="500">
+      <div class = "event">
+        <div class ="event-poster">
+            <img src="images/Cavite_Marching_Bands_Logos.jpg" alt="Marching Bands of Cavite Poster" width="200"
+                height="300">
+        </div>
+        <div class ="event-poster">
+            <img src="images/5th_Anniversary.jpg" alt="Cavite Cavaliers DBC 5th Anniversary Poster" width="200"
+                height="300">
+        </div>
+        <div class ="event-poster">
+            <img src="images/Cavite_City_Fiesta_2022.jpg" alt="Cavite City Fiesta 2022 Poster" width="200" height="300">
+        </div>
+        <div class ="event-poster">
+            <img src="images/Musiko2019.jpg" alt="Musiko 2019 Poster" width="200" height="300">
+        </div>
+      </div>
         <aside>
             <h4>Cavite Cavaliers Drum and Bugle Corps Newsletter</h4>
             <h3>February 2024</h3>

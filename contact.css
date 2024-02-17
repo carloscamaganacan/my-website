@@ -1,83 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
-	--color-1: #f2972e;
-	--color-2: #135e17e9;
-	--color-3: #ffffff;
-	--color-4: #941421;
-	--color-5: #000;
-    --color-6: #c8dfee;
-    --color-7: #ffebc6;
-    --color-8: #00008b; }
-/* the styles for the elements */
-header {
-	background-color: var(--color-2);
-	font-size: 15px;
-	text-align: left;
-    padding: 0 0 10em var(--color-2);
-	border-bottom: 3px solid var(--color-2);}
-header h1 {
-	font: 200 normal 400% Impact;
-	line-height: 2;
-	text-align: center;
-	text-shadow: 2px 2px 4px var(--color-1);
-    color: var(--color-3); }
-header h2 {
-	font-size: 175%;
-	text-align: center;
-	color: 	var(--color-3); }
-header h3 {
-	font: italic 200 normal 250% Script;
-	line-height: 0;
-	text-align: center;
-    color: var(--color-3); }
-header img {
-	float: left;
-	padding: 20 200px;}
-/* Flexbox to display the menu vertically */
-ul {
-	display:flex;
-	flex-direction: row;
-	list-style-type: none;
-	padding: 0;
-	margin: 0; }
-li {
-	background: var(--color-6);
-	width: 150px;
-    margin: 0px 15px 15px 0px;
-    padding: 5px;
-	text-align: center; }
-a  {
-	text-decoration: none;
-	font-weight: normal;
-	color: var(--color-2); }
-/* navigation menu styles*/
-#nav_menu ul li.lastitem a{width: 178px;}
-#nav_menu ul li a.current {color: var(--color-8);}
-#nav_menu ul li a:hover, #nav_menu ul li a:focus {color: var(--color-3); background-color: var(--color-2); } 
-/* the styles for the sidebar */
+  --color-1: #f2972e;
+  --color-2: #135e17;
+  --color-3: #ffffff;
+  --color-4: #800000;
+  --color-5: #000;
+  --color-6: #c8dfee;
+  --color-7: #ffebc6;
+  --color-8: #00008b;
+}
+html {
+  background-color: var(--color-3);
+}
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;}
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 100%;
+  width: 98%;
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 3px solid var(--color-2);
+  display: grid;
+  grid-template: repeat(4, auto) / 1fr;
+  grid-gap: 0rem;
+  grid-template-areas:
+    "head"
+    "navi"
+    "main"
+    "foot";
+}
+a:focus,
+a:hover {
+  font-style: italic;
+}
+/* the styles for the header */
+header {
+  grid-area: head;
+  padding: 1.5em 0 2em 0;
+  border-bottom: 3px solid var(--color-2);
+  background-image: -moz-linear-gradient(
+    30deg,
+    var(--color-2) 0%,
+    var(--color-2) 30%,
+    white 50%,
+    var(--color-2) 80%,
+    var(--color-2) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    30deg,
+    var(--color-2) 0%,
+    var(--color-2) 30%,
+    white 50%,
+    var(--color-2) 80%,
+    var(--color-2) 100%
+  );
+  background-image: -o-linear-gradient(
+    30deg,
+    var(--color-2) 0%,
+    var(--color-2) 30%,
+    white 50%,
+    var(--color-2) 80%,
+    var(--color-2) 100%
+  );
+  background-image: linear-gradient(
+    30deg,
+    var(--color-2) 0%,
+    var(--color-2) 30%,
+    white 50%,
+    var(--color-2) 80%,
+    var(--color-2) 100%
+  );
+}
+header h1 {
+  margin-top: 0.5em;
+  font-size: 400%;
+  font-weight: 200;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 2px 2px 4px gray;
+  color: var(--color-5);
+}
+header h2 {
+  font-size: 200%;
+  font-weight: 200;
+  text-align: center;
+  color: var(--color-5);
+}
+header h3 {
+  font: italic 200 normal 150% Script;
+  line-height: 2;
+  text-align: center;
+  color: var(--color-5);
+}
+header img {
+  float: left;
+  padding: 0 2%;
+  margin-right: 1 em;
+}
+.shadow {
+  text-shadow: 2px 2px 2px var(--color-4);
+}
+/* The styles for the navigation menu */
+#nav_menu {
+  grid-area: navi;
+}
+#nav_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template: auto / repeat(7, 1fr);
+  align-content: center;
+}
+#nav_menu ul li a {
+  display: block;
+  text-align: center;
+  padding: 1em 0;
+  text-decoration: none;
+  background-color: var(--color-8);
+  color: white;
+  font-weight: bold;
+}
+/* the styles for body */
+main {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-size-adjust: 100%;
+  padding: 0;
+  margin: 0 2%;
+  grid-area: main;
+  display: grid;
+  grid-template: 3 auto / 1fr 30%;
+  grid-gap: 2.5%;
+}
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;}
-input[type="text"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;}
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  align-content: center;
+}
+.container h1 {
+  text-align: center;
+  align-content: center;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-content: center;
+}
 input[type="submit"] {
-    background-color: var(--color-5);
-    color: var(--color-3);
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;}
+  background-color: var(--color-5);
+  color: var(--color-3);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.contact-info {
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+  align-content: center;
+}
 /* the styles for the footer */
 footer {
-	background-color: var(--color-2);
-	clear: both; }
+  background-color: var(--color-2);
+  clear: both;
+}
 /* RELATIONAL SELECTOR */
 footer p {
-	text-align: center;
-	color: var(--color-3);
-	padding: 1em 0; }
+  text-align: center;
+  color: var(--color-3);
+  padding: 1em 0;
+}
