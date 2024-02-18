@@ -162,10 +162,11 @@ aside p {
   color: var(--color-4);
 }
 aside img {
-  float: right;
+  display: flex;
+  align-content: center;
   width: 98%;
   margin: 1em 0em;
-  padding-bottom: 2em;
+  padding: 2em 0em;
   justify-items: center;
 }
 
