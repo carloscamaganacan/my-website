@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html { 
+  background-color: var(--color-3);
+}
 :root {
   --color-1: #f2972e;
   --color-2: #135e17;
@@ -13,26 +16,22 @@
   --color-8: #00008b;
   --color-9: #ffff00;
 }
-html {
-  background-color: var(--color-3);
-}
 body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 100%;
-  width: 100%;
-  height: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 98%;
+  max-width: 2000px;
+  margin: auto;
   border: 3px solid var(--color-2);
   display: grid;
-  grid-template: repeat(4, auto) / auto;
+  grid-template: repeat(5, auto) / auto;
   grid-gap: 0rem;
   background: url("images/Background_Image.jpg") no-repeat scroll center;
   grid-template-areas:
     "head"
     "navi"
     "main"
-    "side"
     "foot";
 }
 a:focus,
@@ -48,7 +47,7 @@ header {
     30deg,
     var(--color-2) 0%,
     var(--color-2) 30%,
-    white 50%,
+    var(--color-3) 50%,
     var(--color-2) 80%,
     var(--color-2) 100%
   );
@@ -56,7 +55,7 @@ header {
     30deg,
     var(--color-2) 0%,
     var(--color-2) 30%,
-    white 50%,
+    var(--color-3) 50%,
     var(--color-2) 80%,
     var(--color-2) 100%
   );
@@ -64,7 +63,7 @@ header {
     30deg,
     var(--color-2) 0%,
     var(--color-2) 30%,
-    white 50%,
+    var(--color-3) 50%,
     var(--color-2) 80%,
     var(--color-2) 100%
   );
@@ -72,7 +71,7 @@ header {
     30deg,
     var(--color-2) 0%,
     var(--color-2) 30%,
-    white 50%,
+    var(--color-3) 50%,
     var(--color-2) 80%,
     var(--color-2) 100%
   );
@@ -81,7 +80,7 @@ header {
 header h1 {
   margin-top: 0.5em;
   font-size: 400%;
-  font-weight:bolder;
+  font-weight: bolder;
   line-height: 1;
   text-align: center;
   text-shadow: 2px 2px 4px gray;
@@ -104,9 +103,7 @@ header img {
   padding: 0 2%;
   margin-right: 1 em;
 }
-.shadow {
-  text-shadow: 2px 2px 2px var(--color-4);
-}
+
 /* The styles for the navigation menu */
 #nav_menu {
   grid-area: navi;
@@ -126,11 +123,8 @@ header img {
   text-decoration: none;
   border-bottom: 3px solid var(--color-2);
   background-color: var(--color-8);
-  color: white;
+  color: var(--color-3);
   font-weight: bold;
-}
-#nav_menu a.current {
-  color: var(--color-9);
 }
 /* the styles for the main */
 main {
@@ -141,59 +135,62 @@ main {
   grid-gap: 2.5%;
   grid-template-areas: "arti side";
 }
+
 /* The style for the aside */
 aside {
   grid-area: arti;
-  padding: 20px 5px 5px 20px;
   width: 50%;
-  height: 90%;
+  height: 100%;
   float: left;
+  justify-items: center;
   margin: 2em 0em;
   background-color: var(--color-7);
 }
+aside h1 {
+  margin: 1em 1.5em;
+  font-size: 150%;
+}
 aside h2 {
   font-size: 130%;
-  padding: 10px 10px 20px 10px;
 }
 aside h3 {
   font-size: 105%;
   color: var(--color-5);
-  padding: 10px 10px 20px 10px;
 }
 aside p {
+  margin: 1rem 2em;
   color: var(--color-4);
-  padding: 5px 10px 20px 5px;
 }
 aside img {
   float: right;
-  width: 100%;
-  max-width: 440px;
-  padding: 2% 5%;
+  width: 98%;
+  margin: 1em 0em;
+  padding-bottom: 2em;
+  justify-items: center;
 }
-/* The styles for the footer */
+
+ /* The styles for the footer */
 footer {
   grid-area: foot;
   background-color: var(--color-2);
   clear: both;
 }
 
-/*RELATIONAL SELECTOR */
 footer p {
   text-align: center;
   color: var(--color-3);
-  padding: 1em 0;
+  padding: 1.5em 0;
 }
 
 #mobile_menu {
-  display: none;
+  display: block;
 }
 
-@media only screen and (max-width: 734px) {
+@media screen and (max-width: 734px) {
   section h1 {
     font-size: 125%;
   }
-  section h2,
-  aside h2 {
+  section h2, aside h2 {
     font-size: 110%;
   }
   aside h3 a {
@@ -201,7 +198,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 648px) {
+@media screen and (max-width: 648px) {
   header img {
     float: none;
   }
@@ -213,17 +210,19 @@ footer p {
     justify-items: center;
     text-align: center;
   }
-  section {
+  aside {
     float: none;
     width: 95%;
   }
   #nav_menu {
     display: none;
   }
+
   #mobile_menu {
     display: block;
     grid-area: navi;
   }
+
   main {
     margin: 0;
     grid-template: auto auto / 1fr;
@@ -236,20 +235,18 @@ footer p {
     margin: 1.2em 2%;
   }
   aside img {
-    max-width: 30%;
+    max-width: 25%;
   }
 
   .slicknav_menu {
     aside {
-      float: left;
-      padding: 1.5%;
+      float: none;
+      padding: 2.5%;
       width: 95%;
     }
     background-color: var(--color-4) !important;
   }
 }
 @media only screen and (max-width: 414px) {
-  body {
-    font-size: 90%;
-  }
+  body {font-size: 90%;}
 }

@@ -6,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
   <link rel="stylesheet" href="about_us.css">
-  <link rel="stylesheet" href="slicknav.css">
+  <link rel="stylesheet" href="slicknav.css">     
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js/jquery.slicknav.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
   <script type="text/javascript">
-    $(document).ready(function () {
-      $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
-    });
+    $(document).ready(function(){$('#nav_menu').slicknav({ prependTo: "#mobile_menu" })});
   </script>
 </head>
 
@@ -30,7 +28,7 @@
       <li><a href="videos.html">Video Gallery </a></li>
       <li><a href="photo_gallery.html">Photo Gallery </a></li>
       <li><a href="https://www.facebook.com/cavitecavaliersdrumandbuglecorps/" target="_blank">Facebook Link</a></li>
-      <li><a href="announcement.html">Announcement</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
       <li><a href="about_us.html" class="current">About Us</a></li>
       <li><a href="contact_us.html" class="lastitem">Contact Us</a></li>
     </ul>

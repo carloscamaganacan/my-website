@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  background-color: var(--color-3);
+}
 :root {
   --color-1: #f2972e;
   --color-2: #135e17;
@@ -11,9 +14,7 @@
   --color-6: #c8dfee;
   --color-7: #ffebc6;
   --color-8: #00008b;
-}
-html {
-  background-color: var(--color-3);
+  --color-9: #ffff00;
 }
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -76,7 +77,7 @@ header {
 header h1 {
   margin-top: 0.5em;
   font-size: 400%;
-  font-weight: 200;
+  font-weight: bolder;
   line-height: 1;
   text-align: center;
   text-shadow: 2px 2px 4px gray;
@@ -84,7 +85,7 @@ header h1 {
 }
 header h2 {
   font-size: 200%;
-  font-weight: 200;
+  font-weight: bolder;
   text-align: center;
   color: var(--color-5);
 }
@@ -99,9 +100,7 @@ header img {
   padding: 0 2%;
   margin-right: 1 em;
 }
-.shadow {
-  text-shadow: 2px 2px 2px var(--color-4);
-}
+
 /* The styles for the navigation menu */
 #nav_menu {
   grid-area: navi;
@@ -169,9 +168,76 @@ footer {
   background-color: var(--color-2);
   clear: both;
 }
-/* RELATIONAL SELECTOR */
 footer p {
   text-align: center;
   color: var(--color-3);
   padding: 1em 0;
+}
+#mobile_menu {
+  display: block;
+}
+
+@media screen and (max-width: 734px) {
+  section h1 {
+    font-size: 125%;
+  }
+  section h2, aside h2 {
+    font-size: 110%;
+  }
+  aside h3 a {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  header img {
+    float: none;
+  }
+  header {
+    padding-bottom: 1.5 em;
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr;
+    grid-gap: 0.5em;
+    justify-items: center;
+    text-align: center;
+  }
+  aside {
+    float: none;
+    width: 95%;
+  }
+  #nav_menu {
+    display: none;
+  }
+
+  #mobile_menu {
+    display: block;
+    grid-area: navi;
+  }
+
+  main {
+    margin: 0;
+    grid-template: auto auto / 1fr;
+    grid-gap: 0.5em;
+    grid-template-areas:
+      "side"
+      "arti";
+  }
+  aside {
+    margin: 1.2em 2%;
+  }
+  aside img {
+    max-width: 25%;
+  }
+
+  .slicknav_menu {
+    aside {
+      float: none;
+      padding: 2.5%;
+      width: 95%;
+    }
+    background-color: var(--color-4) !important;
+  }
+}
+@media only screen and (max-width: 414px) {
+  body {font-size: 90%;}
 }
