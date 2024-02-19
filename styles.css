@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-html { 
+html {
   background-color: var(--color-3);
 }
 :root {
@@ -32,6 +32,7 @@ body {
     "head"
     "navi"
     "main"
+    "image"
     "foot";
 }
 a:focus,
@@ -128,49 +129,37 @@ header img {
 }
 /* the styles for the main */
 main {
-  margin: 0 2%;
+  margin: 2em 2%;
   grid-area: main;
   display: grid;
   grid-template: auto / 1fr 30%;
   grid-gap: 2.5%;
-  grid-template-areas: "arti side";
+  grid-template-areas: "aside bside";
 }
 
 /* The style for the aside */
 aside {
-  grid-area: arti;
+  grid-area: aside;
   width: 50%;
   height: 100%;
-  float: left;
-  justify-items: center;
   margin: 2em 0em;
   background-color: var(--color-7);
-}
-aside h1 {
-  margin: 1em 1.5em;
-  font-size: 150%;
-}
-aside h2 {
-  font-size: 130%;
-}
-aside h3 {
-  font-size: 105%;
-  color: var(--color-5);
-}
-aside p {
-  margin: 1rem 2em;
-  color: var(--color-4);
-}
-aside img {
-  display: flex;
-  align-content: center;
-  width: 98%;
-  margin: 1em 0em;
-  padding: 2em 0em;
-  justify-items: center;
+  h1 {
+    margin: 1em 1.5em;
+    font-size: 150%;
+  }
+  p {
+    margin: 1rem 2em;
+    color: var(--color-4);
+  }
+  img {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+  }
 }
 
- /* The styles for the footer */
+/* The styles for the footer */
 footer {
   grid-area: foot;
   background-color: var(--color-2);
@@ -187,19 +176,19 @@ footer p {
   display: block;
 }
 
-@media screen and (max-width: 734px) {
+@media only screen and (max-width: 734px) {
   section h1 {
     font-size: 125%;
   }
-  section h2, aside h2 {
+  section h2, aside h1{
     font-size: 110%;
   }
-  aside h3 a {
+  aside p {
     font-size: 85%;
   }
 }
 
-@media screen and (max-width: 648px) {
+@media only screen and (max-width: 648px) {
   header img {
     float: none;
   }
@@ -229,14 +218,14 @@ footer p {
     grid-template: auto auto / 1fr;
     grid-gap: 0.5em;
     grid-template-areas:
-      "side"
-      "arti";
+      "aside"
+      "bside";
   }
   aside {
     margin: 1.2em 2%;
   }
   aside img {
-    max-width: 25%;
+    max-width: 100%;
   }
 
   .slicknav_menu {
@@ -249,5 +238,7 @@ footer p {
   }
 }
 @media only screen and (max-width: 414px) {
-  body {font-size: 90%;}
+  body {
+    font-size: 90%;
+  }
 }
