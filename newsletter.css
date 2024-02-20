@@ -74,8 +74,10 @@ header {
     var(--color-2) 100%
   );
 }
-
 header h1 {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 0.5em;
   font-size: 400%;
   font-weight: bolder;
@@ -91,8 +93,10 @@ header h2 {
   color: var(--color-5);
 }
 header h3 {
-  font: italic 200 normal 150% Script;
-  line-height: 2;
+  font-family: "Smooch", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 300%;
   text-align: center;
   color: var(--color-5);
 }
@@ -134,7 +138,6 @@ main {
   grid-gap: 2.5%;
   grid-template-areas: "arti side";
 }
-
 /*the styles for the posters */
 .event-poster {
   padding: 10px 10px;
@@ -145,13 +148,25 @@ main {
   border: 5px solid var(--color-2);
   margin: 10px 10px;
 }
+/* the styles for the table using grid layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1px; /* Adjust the gap between columns */
+}
+.item {
+  background-color: var(--color-7); /* Background color of each item */
+  padding: 1px; /* Adjust the padding inside each item */
+  border: 1px solid var(--color-5); /* Border for each item */
+  text-align: center; /* Center the content inside each item */
+}
+
 /* the styles for the aside */
 aside {
   grid-area: arti;
   width: 100%;
   height: auto;
- /* border: 5px solid var(--color-2);*/
-/* background-color: var(--color-7);*/
   background: url("images/background_music_staff.jpg");
 
 }
@@ -176,11 +191,11 @@ aside p {
   line-height: 1;
   color: var(--color-5);
 }
-
 aside li {
   margin: 0 5%;
   color: var(--color-5);
 }
+
 /* the styles for the footer */
 footer {
   background-color: var(--color-2);
@@ -193,7 +208,7 @@ footer p {
   padding: 1em 0;
 }
 #mobile_menu {
-  display: block;
+  display: none;
 }
 
 @media screen and (max-width: 734px) {

@@ -22,7 +22,7 @@ body {
   width: 98%;
   max-width: 1440px;
   margin: 0 auto;
-  border: 3px solid var(--color-2);
+  border: 2px solid var(--color-2);
   display: grid;
   grid-template: repeat(4, auto) / 1fr;
   grid-gap: 0rem;
@@ -75,6 +75,9 @@ header {
   );
 }
 header h1 {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 0.5em;
   font-size: 400%;
   font-weight: bolder;
@@ -90,8 +93,10 @@ header h2 {
   color: var(--color-5);
 }
 header h3 {
-  font: italic 200 normal 150% Script;
-  line-height: 2;
+  font-family: "Smooch", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 300%;
   text-align: center;
   color: var(--color-5);
 }
@@ -174,7 +179,7 @@ footer p {
   padding: 1em 0;
 }
 #mobile_menu {
-  display: block;
+  display: none;
 }
 
 @media screen and (max-width: 734px) {
