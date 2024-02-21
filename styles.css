@@ -125,11 +125,11 @@ header img {
   text-align: center;
   padding: 1em 0;
   text-decoration: none;
-  /* border-bottom: 2px solid var(--color-2); */
   background-color: var(--color-8);
   color: var(--color-3);
   font-weight: bold;
 }
+
 /* the styles for the main */
 main {
   margin: 1.5em 1em;
@@ -172,71 +172,87 @@ footer p {
   color: var(--color-3);
   padding: 1.5em 0;
 }
+
 #mobile_menu {
   display: none;
 }
 
-@media only screen and (max-width: 734px) {
-  section h1 {
-    font-size: 125%;
-  }
-  section h2, aside h1{
-    font-size: 110%;
-  }
+/* first media query */
+@media only screen and (max-width: 1307px) {
+  aside h1{
+    font-size: 110%; /* Reduce the h1 font size from 150% */
+ }
   aside p {
-    font-size: 85%;
+    font-size: 95%; /* Reduce the p font size to 95% */
+}
+}
+@media only screen and (max-width: 1045px) {
+  header h1 {font-size: 3em;}
+  header h2 {font-size: 2em;}
+  header h3 {font-size: 2em;}
+  header image {size: 90%}
+  aside {
+    float: none;
+    width: 55%;
+    margin: 1.2em 2%;
   }
 }
-@media only screen and (max-width: 648px) {
+
+/* second media query */
+@media only screen and (max-width: 780px) {
   header img {
-    float: none;
-  }
+    float: none;    /* Stop the image from floating*/
+}
   header {
-    padding-bottom: 1.5 em;
+    padding-bottom: 1.5em;
     display: grid;
     grid-template: repeat(3, auto) / 1fr;
     grid-gap: 0.5em;
     justify-items: center;
     text-align: center;
   }
-  aside {
-    float: none;
-    width: 95%;
-  }
+  /* hide navigational menu */
   #nav_menu {
     display: none;
   }
-
+  /* display Slicknav menu */
   #mobile_menu {
-    display: block;
+    display: block; 
     grid-area: navi;
   }
-
-  main {
-    margin: 0;
-    h2, p {font-size: 85%}
-    /* grid-template: auto auto / 1fr;
-    grid-gap: 0.5em;
-    grid-template-areas:
-      "aside"
-      "bside"; */
-  }
-  aside {
-    margin: 1.2em 2%;
-  }
-  aside img {
-    max-width: 100%;
-  }
-
   .slicknav_menu {
     aside {
       float: none;
       padding-right: 2%;
       width: 90%;
-    }
-    background-color: var(--color-4) !important;
+      margin: 1em 2%;
   }
+  background-color: var(--color-4) !important;
+  }
+  main {
+    margin: 1em;
+    h2, p {font-size: 85%}
+  }
+   aside {
+    float: none;
+    width: 75%;
+    margin: 1em 2%;
+    padding: 1 0;
+  }
+  aside image {padding-bottom:1em;}
 }
-@media only screen and (max-width: 414px) {
-  body {font-size: 90%;}
+/* third media query*/
+@media only screen and (max-width: 619px) {
+  header h1 {font-size: 2em;}
+  header h2 {font-size: 1.5em;}
+  header h3 {font-size: 1.5em;}
+  header image {size: 75%}
+  aside { float: none;
+          width: 100%;
+          padding:0;
+          margin:0.5em 0;}
+  aside image {
+    padding: 0;
+    margin:0;}
+  footer p {font-size: .8em;}
 }

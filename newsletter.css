@@ -134,39 +134,43 @@ main {
   display: grid;
   grid-template: auto / repeat(1fr 80%);
   grid-gap: 2.5%;
-  grid-template-areas: "arti side";
+  grid-template-areas: "left right";
 }
 /*the styles for the posters */
-.event-poster {
+.event-poster img {
   padding: 10px 10px;
-  gap: 20px;
   width: 200px;
   height: 300px;
   object-fit: cover;
   border: 5px solid var(--color-2);
   margin: 10px 10px;
 }
-/* the styles for the table using grid layout */
+/* This return to top of page link will appear only on the first media query */
+.page-link {
+  display: none;
+}
+/* the styles for the TABLE using grid layout */
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 1px; /* Adjust the gap between columns */
+  margin: 5px
 }
 .item {
   background-color: var(--color-7); /* Background color of each item */
   padding: 1px; /* Adjust the padding inside each item */
   border: 1px solid var(--color-5); /* Border for each item */
   text-align: center; /* Center the content inside each item */
+  vertical-align: middle; /* Vertical alignment of text */
 }
 
 /* the styles for the aside */
 aside {
-  grid-area: arti;
+  grid-area: left;
   width: 100%;
   height: auto;
   background: url("images/background_music_staff.jpg");
-
 }
 aside h4 {
   margin-top: 1em;
@@ -201,7 +205,6 @@ footer {
   background-color: var(--color-2);
   clear: both;
 }
-/* RELATIONAL SELECTOR */
 footer p {
   text-align: center;
   color: var(--color-3);
@@ -211,19 +214,8 @@ footer p {
   display: none;
 }
 
-@media only screen and (max-width: 734px) {
-  section h1 {
-    font-size: 125%;
-  }
-  section h2, aside h2 {
-    font-size: 110%;
-  }
-  aside h3 a {
-    font-size: 85%;
-  }
-}
-
-@media only screen and (max-width: 648px) {
+/* first media query*/
+@media only screen and (max-width: 1045px) {
   header img {
     float: none;
   }
@@ -235,33 +227,35 @@ footer p {
     justify-items: center;
     text-align: center;
   }
-  aside {
-    float: none;
-    width: 95%;
-  }
   #nav_menu {
     display: none;
   }
 
   #mobile_menu {
     display: block;
-    grid-area: navi;
   }
-
-  main {
+main {
     margin: 0;
     grid-template: auto auto / 1fr;
     grid-gap: 0.5em;
     grid-template-areas:
-      "side"
-      "arti";
-  }
+      "top"
+      "bottom";
+  } 
   aside {
+    grid-area: top;
     margin: 1.2em 2%;
   }
-  aside img {
-    max-width: 25%;
-  }
+  .poster {
+    grid-area: bottom;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;}
+      
+   .page-link {
+    display: inline; /* display link return to top of page */
+   }
 
   .slicknav_menu {
     aside {
@@ -271,7 +265,13 @@ footer p {
     }
     background-color: var(--color-4) !important;
   }
+ 
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 500px) {
   body {font-size: 90%;}
+  header h1 {font-size: 2em;}
+  header h2 {font-size: 1.5em;}
+  header h3 {font-size: 1.5em;}
+  header image {size: 75%;}
+  footer p {font-size: 0.8 em;}
 }

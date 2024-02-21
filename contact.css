@@ -125,10 +125,10 @@ header img {
   padding: 1em 0;
   text-decoration: none;
   background-color: var(--color-8);
-  color: white;
+  color: var(--color-3);
   font-weight: bold;
 }
-/* the styles for body */
+/* the styles for main */
 main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-size-adjust: 100%;
@@ -182,20 +182,8 @@ footer p {
 #mobile_menu {
   display: none;
 }
-
-@media screen and (max-width: 734px) {
-  section h1 {
-    font-size: 125%;
-  }
-  section h2, aside h2 {
-    font-size: 110%;
-  }
-  aside h3 a {
-    font-size: 85%;
-  }
-}
-
-@media screen and (max-width: 648px) {
+/* first media query*/
+@media screen and (max-width: 1028px) {
   header img {
     float: none;
   }
@@ -205,38 +193,20 @@ footer p {
     grid-template: repeat(3, auto) / 1fr;
     grid-gap: 0.5em;
     justify-items: center;
-    text-align: center;
   }
-  aside {
-    float: none;
-    width: 95%;
+  main {
+    margin: 1em;
+    h2, p {font-size: 95%;}
   }
   #nav_menu {
     display: none;
   }
-
   #mobile_menu {
-    display: block;
-    grid-area: navi;
-  }
-
-  main {
-    margin: 0;
-    grid-template: auto auto / 1fr;
-    grid-gap: 0.5em;
-    grid-template-areas:
-      "side"
-      "arti";
-  }
-  aside {
-    margin: 1.2em 2%;
-  }
-  aside img {
-    max-width: 25%;
+    display: block;me
   }
 
   .slicknav_menu {
-    aside {
+    main {
       float: none;
       padding: 2.5%;
       width: 95%;
@@ -244,6 +214,12 @@ footer p {
     background-color: var(--color-4) !important;
   }
 }
-@media only screen and (max-width: 414px) {
+/* second media query*/
+@media only screen and (max-width: 500px){
+  header h1 {font-size: 2em;}
+  header h2 {font-size: 1.5em;}
+  header h3 {font-size: 1.5em;}
+  header image {size: 75%;}
   body {font-size: 90%;}
+  footer p {font-size: 0.8em;}
 }
