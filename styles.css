@@ -20,17 +20,16 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 100%;
   width: 98%;
-  max-width: 1440px;
-  margin: auto;
-  border: 2px solid var(--color-2);
-  display: grid;
-  grid-template: repeat(5, auto) / auto;
+  margin: 0 auto;
   background: url("images/Background_Image.jpg") no-repeat scroll center;
+  display: grid;
+  grid-template: repeat(5, auto) / 1fr;
+  grid-gap: 0rem;
   grid-template-areas:
     "head"
     "navi"
     "main"
-    "image"
+    "aside"
     "foot";
 }
 a:focus,
@@ -40,8 +39,8 @@ a:hover {
 /* the styles for the header */
 header {
   grid-area: head;
-  padding: 1.5em 0 2eam 0;
-  border-bottom: 2px solid var(--color-2);
+  padding: 1.5em 0 2em 0;
+  border-bottom: 3px solid var(--color-2);
   background-image: -moz-linear-gradient(
     30deg,
     var(--color-2) 0%,
@@ -126,30 +125,26 @@ header img {
   text-align: center;
   padding: 1em 0;
   text-decoration: none;
-  border-bottom: 2px solid var(--color-2);
+  /* border-bottom: 2px solid var(--color-2); */
   background-color: var(--color-8);
   color: var(--color-3);
   font-weight: bold;
 }
 /* the styles for the main */
 main {
-  margin: 2em 2%;
-  grid-area: main;
-  display: grid;
-  grid-template: auto / 1fr 30%;
-  grid-gap: 2.5%;
-  grid-template-areas: "aside bside";
+  margin: 1.5em 1em;
 }
-
 /* The style for the aside */
 aside {
   grid-area: aside;
-  margin: .5em  0;
-  width: 50%;
+  margin: 5px 2%;
+  width: 36%;
   height: 100%;
   background-color: var(--color-7);
+
   h1 {
-    margin: 1em 1.5em;
+    padding-top: 1em;
+    margin-left: 1.5em;
     font-size: 150%;
   }
   p {
@@ -160,12 +155,14 @@ aside {
     grid-area: image;
     width: 100%;
     height: auto;
+    padding: 1em 0;
   }
 }
 
 /* The styles for the footer */
 footer {
   grid-area: foot;
+  margin-top: 1em;
   background-color: var(--color-2);
   clear: both;
 }
@@ -217,11 +214,12 @@ footer p {
 
   main {
     margin: 0;
-    grid-template: auto auto / 1fr;
+    h2, p {font-size: 85%}
+    /* grid-template: auto auto / 1fr;
     grid-gap: 0.5em;
     grid-template-areas:
       "aside"
-      "bside";
+      "bside"; */
   }
   aside {
     margin: 1.2em 2%;
@@ -233,8 +231,8 @@ footer p {
   .slicknav_menu {
     aside {
       float: none;
-      padding-right: 2.5%;
-      width: 95%;
+      padding-right: 2%;
+      width: 90%;
     }
     background-color: var(--color-4) !important;
   }

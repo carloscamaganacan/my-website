@@ -14,14 +14,13 @@ html {
   --color-6: #c8dfee;
   --color-7: #ffebc6;
   --color-8: #00008b;
+  --color-9: #ffff00;
 }
 body {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 100%;
   width: 98%;
-  /*max-width: 1440px;*/
   margin: 0 auto;
-  border: 3px solid var(--color-2);
   display: grid;
   grid-template: repeat(4, auto) / 1fr;
   grid-gap: 0rem;
@@ -86,6 +85,9 @@ header h1 {
   color: var(--color-5);
 }
 header h2 {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 200%;
   font-weight: bolder;
   text-align: center;
@@ -137,6 +139,7 @@ main {
 /* the styles for the footer */
 footer {
   grid-area: foot;
+  margin-top: 5em;
   background-color: var(--color-2);
   clear: both;
 }
@@ -202,5 +205,8 @@ footer p {
   }
 }
 @media only screen and (max-width: 414px) {
-  body {font-size: 90%;}
+  header, body, main, footer {
+    font-size: 90%;
+  }
+  
 }
