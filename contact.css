@@ -215,7 +215,7 @@ footer p {
   }
 }
 /* second media query*/
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 480px){
   header h1 {font-size: 2em;}
   header h2 {font-size: 1.5em;}
   header h3 {font-size: 1.5em;}
