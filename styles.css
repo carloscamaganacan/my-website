@@ -242,7 +242,7 @@ footer p {
   aside image {padding-bottom:1em;}
 }
 /* third media query*/
-@media only screen and (max-width: 619px) {
+@media only screen and (max-width: 360px) {
   header h1 {font-size: 2em;}
   header h2 {font-size: 1.5em;}
   header h3 {font-size: 1.5em;}

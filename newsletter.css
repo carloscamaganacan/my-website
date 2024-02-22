@@ -254,6 +254,7 @@ main {
     gap: 20px;}
       
    .page-link {
+    margin: 1em 2%;
     display: inline; /* display link return to top of page */
    }
 
