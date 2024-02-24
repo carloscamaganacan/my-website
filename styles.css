@@ -148,6 +148,7 @@ aside {
     font-size: 150%;
   }
   p {
+    font-size: 100%;
     margin: 1rem 2em;
     color: var(--color-4);
   }
@@ -227,7 +228,7 @@ footer p {
       width: 90%;
       margin: 1em 2%;
   }
-  background-color: var(--color-4) !important;
+  background-color: var(--color-8) !important;
   }
   main {
     margin: 1em;
