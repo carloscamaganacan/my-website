@@ -5,6 +5,7 @@
 html {
   background-color: var(--color-3);
 }
+/* CSS variables for colors */
 :root {
   --color-1: #f2972e;
   --color-2: #135e17;
@@ -38,7 +39,6 @@ a:hover {
 header {
   grid-area: head;
   padding: 1.5em 0 2em 0;
-  border-bottom: 3px solid var(--color-2);
   background-image: -moz-linear-gradient(
     30deg,
     var(--color-2) 0%,
@@ -129,7 +129,7 @@ header img {
 }
 /* the styles for the main */
 main {
-  margin: 0 2%;
+   margin: 1em 1dvb;
   grid-area: main;
   display: grid;
   grid-template: auto / repeat(1fr 80%);
@@ -139,12 +139,12 @@ main {
 .poster h2 {
   padding-top: 2px;
 }
-/*the styles for the posters */
+
+/*the styles for the poster images */
 .event-poster img {
   padding: 10px 10px;
   width: 200px;
   height: 300px;
-  object-fit: cover;
   border: 5px solid var(--color-2);
   margin: 10px 10px;
 }
@@ -152,28 +152,30 @@ main {
 .page-link {
   display: none;
 }
-/* the styles for the TABLE using grid layout */
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 1px; /* Adjust the gap between columns */
-  margin: 5px
+/* the styles for the TABLE */
+table {
+  margin: 2em 2dvb; 
+  border: 1px solid var(--color-5);
+  border-collapse: collapse;
 }
-.item {
-  background-color: var(--color-7); /* Background color of each item */
-  padding: 1px; /* Adjust the padding inside each item */
-  border: 1px solid var(--color-5); /* Border for each item */
-  text-align: center; /* Center the content inside each item */
-  vertical-align: middle; /* Vertical alignment of text */
+td.item {
+  border: 1px  solid var(--color-5);
+  padding: .2em .7em;
+  background-color: var(--color-7); /* Background color of data cell */
+  text-align: left; /* Left align the content in data cell */
 }
-
+th.item {
+  border: 1px  solid var(--color-5);
+  padding: .2em .7em;
+  background-color: var(--color-6); /* Background color of header cell */
+  text-align: center; /* Center the content in header cell */
+}
 /* the styles for the aside */
 aside {
   grid-area: left;
   width: 100%;
   height: auto;
-  background: url("images/drummer_background.jpg");
+  background: url("images/MusicalNotes.jpg");
 }
 aside h4 {
   margin-top: 1em;
@@ -200,7 +202,6 @@ aside li {
   margin: 0 5%;
   color: var(--color-5);
 }
-
 /* the styles for the footer */
 footer {
   grid-area: foot;

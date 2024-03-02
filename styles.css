@@ -5,6 +5,7 @@
 html {
   background-color: var(--color-3);
 }
+/* CSS variables for colors */
 :root {
   --color-1: #f2972e;
   --color-2: #135e17;
@@ -40,7 +41,6 @@ a:hover {
 header {
   grid-area: head;
   padding: 1.5em 0 2em 0;
-  border-bottom: 3px solid var(--color-2);
   background-image: -moz-linear-gradient(
     30deg,
     var(--color-2) 0%,
@@ -137,8 +137,8 @@ main {
 /* The style for the aside */
 aside {
   grid-area: aside;
-  margin: 5px 2%;
-  width: 36%;
+  margin: 0px 2%;
+  width: 39%;
   height: 100%;
   background-color: var(--color-7);
 
@@ -177,8 +177,27 @@ footer p {
 #mobile_menu {
   display: none;
 }
-
 /* first media query */
+@media only screen and (max-width: 1620px) {
+  aside h1{
+    font-size: 150%; /* Reduce the h1 font size from 150% */
+ }
+  aside p {
+    font-size: 110%; /* Reduce the p font size to 95% */
+}
+}
+@media only screen and (max-width: 1045px) {
+  header h1 {font-size: 3em;}
+  header h2 {font-size: 2em;}
+  header h3 {font-size: 2em;}
+  header image {size: 90%}
+  aside {
+    float: none;
+    width: 55%;
+    margin: 0;
+  }
+}
+/* second media query */
 @media only screen and (max-width: 1307px) {
   aside h1{
     font-size: 110%; /* Reduce the h1 font size from 150% */
@@ -195,11 +214,10 @@ footer p {
   aside {
     float: none;
     width: 55%;
-    margin: 1.2em 2%;
+    margin: 0;
   }
 }
-
-/* second media query */
+/* third media query */
 @media only screen and (max-width: 780px) {
   header img {
     float: none;    /* Stop the image from floating*/
@@ -207,7 +225,7 @@ footer p {
   header {
     padding-bottom: 1.5em;
     display: grid;
-    grid-template: repeat(3, auto) / 1fr;
+    grid-template: repeat(3, auto) / 100%;
     grid-gap: 0.5em;
     justify-items: center;
     text-align: center;
@@ -224,36 +242,56 @@ footer p {
   .slicknav_menu {
     aside {
       float: none;
-      padding-right: 2%;
-      width: 90%;
-      margin: 1em 2%;
+      width: 100%;
   }
   background-color: var(--color-8) !important;
+  }
+  body {
+   margin: 0;
   }
   main {
     margin: 1em;
     h2, p {font-size: 85%}
   }
    aside {
+    margin: 0;
     float: none;
-    width: 75%;
-    margin: 1em 2%;
-    padding: 1 0;
+    width: 100%;
   }
   aside image {padding-bottom:1em;}
 }
-/* third media query*/
+footer {
+  margin-top: 0;
+}
+/* fourth media query*/
 @media only screen and (max-width: 480x) {
   header h1 {font-size: 2em;}
   header h2 {font-size: 1.5em;}
-  header h3 {font-size: 1.5em;}
+  header h3 {font-size: 2em;}
   header image {size: 75%}
   aside { float: none;
-          width: 100%;
-          padding:0;
-          margin:0.5em 0;}
+        width: 100%;
+        margin: 0;}
   aside image {
     padding: 0;
     margin:0;}
   footer p {font-size: .8em;}
+}
+/* fifth media query (383 pixels or less) */
+@media only screen and (max-width: 383px) {
+  header h1 {font-size: 1.125em;}
+  header h2 {font-size: .75em;}
+  header h3 {font-size: 1em;}
+  header image {
+      float: none;
+      max-width: 50%;
+      margin-right:0}
+  aside {
+    float: none;
+    width: 100%;
+}
+  aside image {
+    padding: 0;
+    margin: 0;}
+  footer p {font-size: .65em;}
 }

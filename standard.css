@@ -5,6 +5,7 @@
 html {
   background-color: var(--color-3);
 }
+/* CSS variables for colors */
 :root {
   --color-1: #f2972e;
   --color-2: #135e17;
@@ -39,7 +40,6 @@ a:hover {
 header {
   grid-area: head;
   padding: 1.5em 0 2em 0;
-  border-bottom: 3px solid var(--color-2);
   background-image: -moz-linear-gradient(
     30deg,
     var(--color-2) 0%,
