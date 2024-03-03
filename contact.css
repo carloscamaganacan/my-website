@@ -18,10 +18,9 @@ html {
   --color-9: #ffff00;
 }
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 100%;
   width: 98%;
-  margin: 0 auto;
   display: grid;
   grid-template: repeat(4, auto) / 1fr;
   grid-gap: 0rem;
@@ -38,7 +37,6 @@ a:hover {
 /* the styles for the header */
 header {
   grid-area: head;
-  padding: 1.5em 0 2em 0;
   background-image: -moz-linear-gradient(
     30deg,
     var(--color-2) 0%,
@@ -104,7 +102,8 @@ header h3 {
 header img {
   float: left;
   padding: 0 2%;
-  margin-right: 1 em;
+  margin-top: 0.5em;
+  margin-right: 1em;
 }
 
 /* The styles for the navigation menu */
@@ -132,7 +131,6 @@ header img {
 main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-size-adjust: 100%;
-  padding: 0;
   margin: 0 2%;
   grid-area: main;
   display: grid;

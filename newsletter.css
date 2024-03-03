@@ -18,10 +18,9 @@ html {
   --color-9: #ffff00;
 }
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 100%;
   width: 98%;
-  margin: 0 auto;
   display: grid;
   grid-template: repeat(4, auto) / 1fr;
   grid-gap: 0rem;
@@ -38,7 +37,6 @@ a:hover {
 /* the styles for the header */
 header {
   grid-area: head;
-  padding: 1.5em 0 2em 0;
   background-image: -moz-linear-gradient(
     30deg,
     var(--color-2) 0%,
@@ -104,7 +102,8 @@ header h3 {
 header img {
   float: left;
   padding: 0 2%;
-  margin-right: 1 em;
+  margin-top: 0.5em;
+  margin-right: 1em;
 }
 /* The styles for the navigation menu */
 #nav_menu {
@@ -129,7 +128,7 @@ header img {
 }
 /* the styles for the main */
 main {
-   margin: 1em 1dvb;
+  margin: 1em 2%;
   grid-area: main;
   display: grid;
   grid-template: auto / repeat(1fr 80%);
@@ -154,7 +153,7 @@ main {
 }
 /* the styles for the TABLE */
 table {
-  margin: 2em 2dvb; 
+  margin: 2em 2dvb;
   border: 1px solid var(--color-5);
   border-collapse: collapse;
 }
@@ -238,6 +237,15 @@ footer p {
   #mobile_menu {
     display: block;
   }
+  .slicknav_menu {
+    main {
+      float: none;
+      padding: 2.5%;
+      width: 95%;
+    }
+    background-color: var(--color-8) !important;
+  }
+
 main {
     margin: 0;
     grid-template: auto auto / 1fr;
@@ -248,7 +256,7 @@ main {
   } 
   aside {
     grid-area: top;
-    margin: 1.2em 2%;
+    margin: 1.2em 0;
   }
   .poster {
     grid-area: bottom;
@@ -261,21 +269,23 @@ main {
     margin: 1em 2%;
     display: inline; /* display link return to top of page */
    }
-
-  .slicknav_menu {
-    aside {
-      float: none;
-      padding: 2.5%;
-      width: 95%;
-    }
-    background-color: var(--color-8) !important;
-  }
 }
 @media only screen and (max-width: 480px) {
   body {font-size: 90%;}
   header h1 {font-size: 2em;}
   header h2 {font-size: 1.5em;}
   header h3 {font-size: 1.5em;}
-  header image {size: 75%;}
-  footer p {font-size: 0.8 em;}
+  header img {
+    margin:0;
+    size: 50%}
+  footer p {font-size: 0.8em;}
 }
+@media only screen and (max-width: 383px) {
+  header h1 {font-size: 1.125em;}
+  header h2 {font-size: .75em;}
+  header h3 {font-size: 1em;}
+  header img {
+      float: none;
+      width: 50%;
+      margin:0}
+  }
