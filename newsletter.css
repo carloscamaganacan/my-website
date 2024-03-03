@@ -18,7 +18,8 @@ html {
   --color-9: #ffff00;
 }
 body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 100%;
   width: 98%;
   display: grid;
@@ -70,12 +71,17 @@ header {
     var(--color-2) 100%
   );
 }
+header img {
+  float: left;
+  padding: 0 2%;
+  margin-top: 0.5em;
+  margin-right: 1em;
+}
 header h1 {
   font-family: "Bruno Ace SC", sans-serif;
-  font-weight: 400;
   font-style: normal;
   margin-top: 0.5em;
-  font-size: 400%;
+  font-size: 300%;
   font-weight: bolder;
   line-height: 1;
   text-align: center;
@@ -84,7 +90,6 @@ header h1 {
 }
 header h2 {
   font-family: "Bruno Ace SC", sans-serif;
-  font-weight: 400;
   font-style: normal;
   font-size: 200%;
   font-weight: bolder;
@@ -93,18 +98,13 @@ header h2 {
 }
 header h3 {
   font-family: "Smooch", cursive;
-  font-weight: 400;
   font-style: normal;
-  font-size: 300%;
+  font-size: 200%;
+  font-weight: normal;
   text-align: center;
   color: var(--color-5);
 }
-header img {
-  float: left;
-  padding: 0 2%;
-  margin-top: 0.5em;
-  margin-right: 1em;
-}
+
 /* The styles for the navigation menu */
 #nav_menu {
   grid-area: navi;
@@ -158,14 +158,14 @@ table {
   border-collapse: collapse;
 }
 td.item {
-  border: 1px  solid var(--color-5);
-  padding: .2em .7em;
+  border: 1px solid var(--color-5);
+  padding: 0.2em 0.7em;
   background-color: var(--color-7); /* Background color of data cell */
   text-align: left; /* Left align the content in data cell */
 }
 th.item {
-  border: 1px  solid var(--color-5);
-  padding: .2em .7em;
+  border: 1px solid var(--color-5);
+  padding: 0.2em 0.7em;
   background-color: var(--color-6); /* Background color of header cell */
   text-align: center; /* Center the content in header cell */
 }
@@ -183,9 +183,8 @@ aside h4 {
   text-align: center;
 }
 aside h2 {
-  margin: 1em 1dvb;
+  margin: 1em 2dvb;
   font-size: 130%;
-  padding: 5px;
 }
 aside h3 {
   text-align: center;
@@ -193,7 +192,7 @@ aside h3 {
   color: var(--color-5);
 }
 aside p {
-  margin: 1em 2%;
+  margin: 1em 2dvb;
   line-height: 1;
   color: var(--color-5);
 }
@@ -221,6 +220,7 @@ footer p {
 @media only screen and (max-width: 1045px) {
   header img {
     float: none;
+    size: 50%;
   }
   header {
     padding-bottom: 1.5 em;
@@ -246,14 +246,14 @@ footer p {
     background-color: var(--color-8) !important;
   }
 
-main {
+  main {
     margin: 0;
     grid-template: auto auto / 1fr;
     grid-gap: 0.5em;
     grid-template-areas:
       "top"
       "bottom";
-  } 
+  }
   aside {
     grid-area: top;
     margin: 1.2em 0;
@@ -263,29 +263,52 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;}
-      
-   .page-link {
+    gap: 20px;
+  }
+
+  .page-link {
     margin: 1em 2%;
     display: inline; /* display link return to top of page */
-   }
+  }
 }
 @media only screen and (max-width: 480px) {
-  body {font-size: 90%;}
-  header h1 {font-size: 2em;}
-  header h2 {font-size: 1.5em;}
-  header h3 {font-size: 1.5em;}
+  body {
+    font-size: 90%;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  header h2 {
+    font-size: 1.5em;
+  }
+  header h3 {
+    font-size: 1.5em;
+  }
   header img {
-    margin:0;
-    size: 50%}
-  footer p {font-size: 0.8em;}
+    float: none;
+    width: 50%;
+    margin: 0;
+  }
+  footer p {
+    font-size: 0.8em;
+  }
 }
 @media only screen and (max-width: 383px) {
-  header h1 {font-size: 1.125em;}
-  header h2 {font-size: .75em;}
-  header h3 {font-size: 1em;}
-  header img {
-      float: none;
-      width: 50%;
-      margin:0}
+  header h1 {
+    font-size: 1.125em;
   }
+  header h2 {
+    font-size: 0.75em;
+  }
+  header h3 {
+    font-size: 1em;
+  }
+  header img {
+    float: none;
+    size: 50%;
+    margin: 0;
+  }
+  footer p {
+    font-size: 0.65em;
+  }
+}

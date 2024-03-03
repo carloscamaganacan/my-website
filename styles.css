@@ -18,7 +18,8 @@ html {
   --color-9: #ffff00;
 }
 body {
-  font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 100%;
   width: 98%;
   background: url("images/Background_Image.jpg") no-repeat scroll center;
@@ -38,6 +39,7 @@ a:hover {
 }
 /* the styles for the header */
 header {
+  /* grid-area: head; */
   grid-area: head;
   background-image: -moz-linear-gradient(
     30deg,
@@ -72,12 +74,17 @@ header {
     var(--color-2) 100%
   );
 }
+header img {
+  float: left;
+  padding: 0 2%;
+  margin-top: 0.5em;
+  margin-right: 1em;
+}
 header h1 {
   font-family: "Bruno Ace SC", sans-serif;
-  font-weight: 400;
   font-style: normal;
   margin-top: 0.5em;
-  font-size: 400%;
+  font-size: 300%;
   font-weight: bolder;
   line-height: 1;
   text-align: center;
@@ -86,7 +93,6 @@ header h1 {
 }
 header h2 {
   font-family: "Bruno Ace SC", sans-serif;
-  font-weight: 400;
   font-style: normal;
   font-size: 200%;
   font-weight: bolder;
@@ -95,18 +101,13 @@ header h2 {
 }
 header h3 {
   font-family: "Smooch", cursive;
-  font-weight: 400;
   font-style: normal;
-  font-size: 300%;
+  font-size: 200%;
+  font-weight: normal;
   text-align: center;
   color: var(--color-5);
 }
-header img {
-  float: left;
-  padding: 0 2%;
-  margin-top: 0.5em;
-  margin-right: 1em;
-}
+
 /* The styles for the navigation menu */
 #nav_menu {
   grid-area: navi;
@@ -178,27 +179,23 @@ footer p {
 }
 /* first media query */
 @media only screen and (max-width: 1620px) {
-  aside h1{
+  aside h1 {
     font-size: 150%; /* Reduce the h1 font size from 150% */
- }
+  }
   aside p {
     font-size: 110%; /* Reduce the p font size to 95% */
-}
+  }
 }
 /* second media query */
 @media only screen and (max-width: 1307px) {
-  aside h1{
+  aside h1 {
     font-size: 110%; /* Reduce the h1 font size from 150% */
- }
+  }
   aside p {
     font-size: 95%; /* Reduce the p font size to 95% */
-}
+  }
 }
 @media only screen and (max-width: 1045px) {
-  header h1 {font-size: 3em;}
-  header h2 {font-size: 2em;}
-  header h3 {font-size: 2em;}
-  header img {size: 90%}
   aside {
     float: none;
     width: 55%;
@@ -208,8 +205,10 @@ footer p {
 /* third media query */
 @media only screen and (max-width: 780px) {
   header img {
-    float: none;    /* Stop the image from floating*/
-}
+    margin: 0;
+    size: 50%;
+    float: none; /* Stop the image from floating*/
+  }
   header {
     padding-bottom: 1.5em;
     display: grid;
@@ -224,64 +223,91 @@ footer p {
   }
   /* display Slicknav menu */
   #mobile_menu {
-    display: block; 
+    display: block;
     grid-area: navi;
   }
   .slicknav_menu {
     aside {
       float: none;
       width: 100%;
-  }
-  background-color: var(--color-8) !important;
+    }
+    background-color: var(--color-8) !important;
   }
   body {
-   margin: 0;
+    margin: 0;
   }
   main {
     margin: 1em;
-    h2, p {font-size: 85%}
+    h2,
+    p {
+      font-size: 85%;
+    }
   }
-   aside {
+  aside {
     margin: 0;
     float: none;
     width: 100%;
   }
-  aside image {padding-bottom:1em;}
+  aside image {
+    padding-bottom: 1em;
+  }
 }
 footer {
   margin-top: 0;
 }
 /* fourth media query*/
 @media only screen and (max-width: 480x) {
-  header h1 {font-size: 2em;}
-  header h2 {font-size: 1.5em;}
-  header h3 {font-size: 2em;}
+  header h1 {
+    font-size: 150%;
+  }
+  header h2 {
+    font-size: 1.5em;
+  }
+  header h3 {
+    font-size: 2em;
+  }
   header img {
-    margin:0;
-    size: 50%}
-  aside { float: none;
-        width: 100%;
-        margin: 0;}
-  aside image {
-    padding: 0;
-    margin:0;}
-  footer p {font-size: 0.8em;}
-}
-/* fifth media query (383 pixels or less) */
-@media only screen and (max-width: 383px) {
-  header h1 {font-size: 1.125em;}
-  header h2 {font-size: .75em;}
-  header h3 {font-size: 1em;}
-  header img {
-      float: none;
-      width: 50%;
-      margin:0}
+    margin: 0;
+    size: 50%;
+  }
   aside {
     float: none;
     width: 100%;
-}
+    margin: 0;
+  }
   aside image {
     padding: 0;
-    margin: 0;}
-  footer p {font-size: .65em;}
+    margin: 0;
+  }
+  footer p {
+    font-size: 0.8em;
+  }
+}
+/* fifth media query (383 pixels or less) */
+@media only screen and (max-width: 383px) {
+  header h1 {
+    font-size: 1.125em;
+  }
+  header h2 {
+    font-size: 0.75em;
+  }
+  header h3 {
+    font-size: 1em;
+  }
+  header img {
+    float: none;
+    width: 50%;
+    margin: 0;
+  }
+  aside {
+    float: none;
+    width: 100%;
+  }
+  aside image {
+    padding: 0;
+    margin: 0;
+  }
+  footer p {
+    font-size: 0.65em;
+  }
 }

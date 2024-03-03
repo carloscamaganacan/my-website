@@ -18,7 +18,8 @@ html {
   --color-9: #ffff00;
 }
 body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 100%;
   width: 98%;
   display: grid;
@@ -70,12 +71,17 @@ header {
     var(--color-2) 100%
   );
 }
+header img {
+  float: left;
+  padding: 0 2%;
+  margin-top: 0.5em;
+  margin-right: 1em;
+}
 header h1 {
   font-family: "Bruno Ace SC", sans-serif;
-  font-weight: 400;
   font-style: normal;
   margin-top: 0.5em;
-  font-size: 400%;
+  font-size: 300%;
   font-weight: bolder;
   line-height: 1;
   text-align: center;
@@ -84,26 +90,19 @@ header h1 {
 }
 header h2 {
   font-family: "Bruno Ace SC", sans-serif;
-  font-weight: 400;
   font-style: normal;
   font-size: 200%;
   font-weight: bolder;
   text-align: center;
-  color: var(--color-5);;
+  color: var(--color-5);
 }
 header h3 {
   font-family: "Smooch", cursive;
-  font-weight: 400;
   font-style: normal;
-  font-size: 300%;
+  font-size: 200%;
+  font-weight: normal;
   text-align: center;
   color: var(--color-5);
-}
-header img {
-  float: left;
-  padding: 0 2%;
-  margin-top: 0.5em;
-  margin-right: 1em;
 }
 
 /* The styles for the navigation menu */
@@ -183,6 +182,8 @@ footer p {
 /* first media query*/
 @media screen and (max-width: 1028px) {
   header img {
+    margin: 0;
+    size: 50%;
     float: none;
   }
   header {
@@ -194,7 +195,10 @@ footer p {
   }
   main {
     margin: 1em;
-    h2, p {font-size: 95%;}
+    h2,
+    p {
+      font-size: 95%;
+    }
   }
   #nav_menu {
     display: none;
@@ -213,11 +217,46 @@ footer p {
   }
 }
 /* second media query*/
-@media only screen and (max-width: 480px){
-  header h1 {font-size: 2em;}
-  header h2 {font-size: 1.5em;}
-  header h3 {font-size: 1.5em;}
-  header image {size: 75%;}
-  body {font-size: 90%;}
-  footer p {font-size: 0.8em;}
+@media only screen and (max-width: 480px) {
+  header h1 {
+    font-size: 2em;
+  }
+  header h2 {
+    font-size: 1.5em;
+  }
+  header h3 {
+    font-size: 1.5em;
+  }
+  header image {
+    margin: 0;
+    size: 50%;
+    float: none;
+  }
+  body {
+    font-size: 90%;
+  }
+  footer p {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 383px) {
+  header h1 {
+    font-size: 1.125em;
+  }
+  header h2 {
+    font-size: 0.75em;
+  }
+  header h3 {
+    font-size: 1em;
+  }
+  header img {
+    float: none;
+    width: 50%;
+    margin: 0;
+    justify-items: center;
+    text-align: center;
+  }
+  footer p {
+    font-size: 0.65em;
+  }
 }
