@@ -197,7 +197,7 @@ aside p {
   color: var(--color-5);
 }
 aside li {
-  margin: 0 5%;
+  margin: 0 4dvb;
   color: var(--color-5);
 }
 /* the styles for the footer */
@@ -258,6 +258,10 @@ footer p {
     grid-area: top;
     margin: 1.2em 0;
   }
+  aside li {
+    margin: 0 4dvb;
+    color: var(--color-5);
+  }
   .poster {
     grid-area: bottom;
     display: flex;
@@ -289,6 +293,14 @@ footer p {
     width: 50%;
     margin: 0;
   }
+  aside {
+    float: none;
+    width: 100%;
+  }
+  aside image {
+    padding: 0;
+    margin: 0;
+  }
   footer p {
     font-size: 0.8em;
   }
@@ -306,6 +318,14 @@ footer p {
   header img {
     float: none;
     size: 50%;
+    margin: 0;
+  }
+  aside {
+    float: none;
+    width: 100%;
+  }
+  aside image {
+    padding: 0;
     margin: 0;
   }
   footer p {

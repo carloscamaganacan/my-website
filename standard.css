@@ -239,13 +239,6 @@ footer p {
   header h3 {
     font-size: 1em;
   }
-  header img {
-    float: none;
-    width: 50%;
-    margin: 0;
-    justify-items: center;
-    text-align: center;
-  }
   footer p {
     font-size: 0.65em;
   }
