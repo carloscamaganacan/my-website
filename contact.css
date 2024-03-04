@@ -5,6 +5,7 @@
 html {
   background-color: var(--color-3);
 }
+
 /* CSS variables for colors */
 :root {
   --color-1: #f2972e;
@@ -71,38 +72,49 @@ header {
     var(--color-2) 100%
   );
 }
-header img {
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.logo img {
+  width: 100px;
+  height: auto;
   float: left;
   padding: 0 2%;
-  margin-top: 0.5em;
-  margin-right: 1em;
+  margin-top: 1px;
+  margin-right: 1px;
 }
-header h1 {
-  font-family: "Bruno Ace SC", sans-serif;
-  font-style: normal;
-  margin-top: 0.5em;
-  font-size: 300%;
-  font-weight: bolder;
-  line-height: 1;
-  text-align: center;
-  text-shadow: 2px 2px 4px gray;
-  color: var(--color-5);
-}
-header h2 {
-  font-family: "Bruno Ace SC", sans-serif;
-  font-style: normal;
-  font-size: 200%;
-  font-weight: bolder;
-  text-align: center;
-  color: var(--color-5);
-}
-header h3 {
-  font-family: "Smooch", cursive;
-  font-style: normal;
-  font-size: 200%;
-  font-weight: normal;
-  text-align: center;
-  color: var(--color-5);
+.band-info {
+  h1 {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-style: normal;
+    margin-top: 5px;
+    font-size: 200%;
+    font-weight: bolder;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 2px 2px 4px gray;
+    color: var(--color-5);
+  }
+  h2 {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-style: normal;
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--color-5);
+  }
+  h3 {
+    font-family: "Smooch", cursive;
+    font-style: normal;
+    font-size: 200%;
+    font-weight: normal;
+    text-align: center;
+    color: var(--color-5);
+  }
 }
 
 /* The styles for the navigation menu */
@@ -129,7 +141,7 @@ header h3 {
 /* the styles for main */
 main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-size-adjust: 100%;
+  font-size: 100%;
   margin: 0 2%;
   grid-area: main;
   display: grid;
@@ -166,6 +178,7 @@ input[type="submit"] {
   text-align: center;
   align-content: center;
 }
+
 /* the styles for the footer */
 footer {
   background-color: var(--color-2);
@@ -179,13 +192,8 @@ footer p {
 #mobile_menu {
   display: none;
 }
-/* first media query*/
+/* 1st media query*/
 @media screen and (max-width: 1028px) {
-  header img {
-    margin: 0;
-    size: 50%;
-    float: none;
-  }
   header {
     padding-bottom: 1.5 em;
     display: grid;
@@ -216,17 +224,9 @@ footer p {
     background-color: var(--color-8) !important;
   }
 }
-/* second media query*/
+
+/* 2nd media query*/
 @media only screen and (max-width: 480px) {
-  header h1 {
-    font-size: 2em;
-  }
-  header h2 {
-    font-size: 1.5em;
-  }
-  header h3 {
-    font-size: 1.5em;
-  }
   body {
     font-size: 90%;
   }
@@ -234,17 +234,10 @@ footer p {
     font-size: 0.8em;
   }
 }
+
+/* 3rd media query*/
 @media only screen and (max-width: 383px) {
-  header h1 {
-    font-size: 1.125em;
-  }
-  header h2 {
-    font-size: 0.75em;
-  }
-  header h3 {
-    font-size: 1em;
-  }
-  footer p {
-    font-size: 0.65em;
+  body {
+    font-size: 75%;
   }
 }

@@ -39,7 +39,6 @@ a:hover {
 }
 /* the styles for the header */
 header {
-  /* grid-area: head; */
   grid-area: head;
   background-image: -moz-linear-gradient(
     30deg,
@@ -74,38 +73,49 @@ header {
     var(--color-2) 100%
   );
 }
-header img {
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.logo img {
+  width: 100px;
+  height: auto;
   float: left;
   padding: 0 2%;
-  margin-top: 0.5em;
-  margin-right: 1em;
+  margin-top: 1px;
+  margin-right: 1px;
 }
-header h1 {
-  font-family: "Bruno Ace SC", sans-serif;
-  font-style: normal;
-  margin-top: 0.5em;
-  font-size: 300%;
-  font-weight: bolder;
-  line-height: 1;
-  text-align: center;
-  text-shadow: 2px 2px 4px gray;
-  color: var(--color-5);
-}
-header h2 {
-  font-family: "Bruno Ace SC", sans-serif;
-  font-style: normal;
-  font-size: 200%;
-  font-weight: bolder;
-  text-align: center;
-  color: var(--color-5);
-}
-header h3 {
-  font-family: "Smooch", cursive;
-  font-style: normal;
-  font-size: 200%;
-  font-weight: normal;
-  text-align: center;
-  color: var(--color-5);
+.band-info {
+  h1 {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-style: normal;
+    margin-top: 5px;
+    font-size: 200%;
+    font-weight: bolder;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 2px 2px 4px gray;
+    color: var(--color-5);
+  }
+  h2 {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-style: normal;
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--color-5);
+  }
+  h3 {
+    font-family: "Smooch", cursive;
+    font-style: normal;
+    font-size: 200%;
+    font-weight: normal;
+    text-align: center;
+    color: var(--color-5);
+  }
 }
 
 /* The styles for the navigation menu */
@@ -177,7 +187,8 @@ footer p {
 #mobile_menu {
   display: none;
 }
-/* first media query */
+
+/* 1st media query */
 @media only screen and (max-width: 1620px) {
   aside h1 {
     font-size: 150%; /* Reduce the h1 font size from 150% */
@@ -186,7 +197,8 @@ footer p {
     font-size: 110%; /* Reduce the p font size to 95% */
   }
 }
-/* second media query */
+
+/* 2nd media query */
 @media only screen and (max-width: 1307px) {
   aside h1 {
     font-size: 110%; /* Reduce the h1 font size from 150% */
@@ -195,22 +207,10 @@ footer p {
     font-size: 95%; /* Reduce the p font size to 95% */
   }
 }
-@media only screen and (max-width: 1045px) {
-  aside {
-    float: none;
-    width: 55%;
-    margin: 0;
-  }
-}
-/* third media query */
+
+/* 3rd media query */
 @media only screen and (max-width: 780px) {
-  header img {
-    margin: 0;
-    size: 50%;
-    float: none; /* Stop the image from floating*/
-  }
   header {
-    padding-bottom: 1.5em;
     display: grid;
     grid-template: repeat(3, auto) / 100%;
     grid-gap: 0.5em;
@@ -255,25 +255,12 @@ footer p {
 footer {
   margin-top: 0;
 }
-/* fourth media query*/
-@media only screen and (max-width: 480x) {
-  header h1 {
-    font-size: 150%;
-  }
-  header h2 {
-    font-size: 1.5em;
-  }
-  header h3 {
-    font-size: 2em;
-  }
-  header img {
-    margin: 0;
-    size: 50%;
-  }
+
+/* 4th media query (383 pixels or less) */
+@media only screen and (max-width: 383px) {
   aside {
     float: none;
     width: 100%;
-    margin: 0;
   }
   aside image {
     padding: 0;
@@ -281,33 +268,5 @@ footer {
   }
   footer p {
     font-size: 0.8em;
-  }
-}
-/* fifth media query (383 pixels or less) */
-@media only screen and (max-width: 383px) {
-  header h1 {
-    font-size: 1.125em;
-  }
-  header h2 {
-    font-size: 0.75em;
-  }
-  header h3 {
-    font-size: 1em;
-  }
-  header img {
-    float: none;
-    width: 50%;
-    margin: 0;
-  }
-  aside {
-    float: none;
-    width: 100%;
-  }
-  aside image {
-    padding: 0;
-    margin: 0;
-  }
-  footer p {
-    font-size: 0.65em;
   }
 }
