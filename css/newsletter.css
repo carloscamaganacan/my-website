@@ -21,7 +21,11 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 100%;
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 98%;
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
   display: grid;
   grid-template: repeat(4, auto) / 1fr;
   grid-gap: 0rem;
@@ -145,7 +149,11 @@ main {
 
 /* the styles for the TABLE */
 table {
+<<<<<<< HEAD
   margin: 2em 3dvb;
+=======
+  margin: 2em 2dvb;
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
   border: 1px solid var(--color-5);
   border-collapse: collapse;
 }
@@ -163,11 +171,18 @@ th.item {
 }
 /* the styles for the aside */
 aside {
+<<<<<<< HEAD
   width: 100%;
   height: max-content;
   margin: 1.2em 0;
   background: url(/images/MusicalNotes.jpg);
   background-size: cover;
+=======
+  /* grid-area: left; */
+  width: 100%;
+  height: auto;
+  background: url("images/MusicalNotes.jpg");
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
 }
 aside h4 {
   font-family: "Bruno Ace SC", sans-serif;
@@ -177,7 +192,11 @@ aside h4 {
   text-align: center;
 }
 aside h2 {
+<<<<<<< HEAD
   margin: 1em 3dvb;
+=======
+  margin: 1em 2dvb;
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
   font-size: 200%;
 }
 aside h3 {
@@ -186,12 +205,20 @@ aside h3 {
   color: var(--color-5);
 }
 aside p {
+<<<<<<< HEAD
   margin: 1em 3dvb;
+=======
+  margin: 1em 2dvb;
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
   line-height: 1;
   color: var(--color-5);
 }
 aside li {
+<<<<<<< HEAD
   margin: 0 5dvb;
+=======
+  margin: 0 4dvb;
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
   color: var(--color-5);
 }
 /* the styles for the footer */
@@ -258,12 +285,16 @@ footer p {
   body {
     font-size: 90%;
   }
+<<<<<<< HEAD
   table {
     margin: 2em 2dvb;
     border: 1px solid var(--color-5);
     border-collapse: collapse;
   }
   aside {
+=======
+    aside {
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
     float: none;
     width: 100%;
   }
@@ -271,6 +302,7 @@ footer p {
     padding: 0;
     margin: 0;
   }
+<<<<<<< HEAD
   aside h2 h3 p {
     margin: 0;
     line-height: 0;
@@ -280,8 +312,14 @@ footer p {
     margin: 0 1em;
   }
 
+=======
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
   footer p {
     font-size: 0.8em;
   }
 }
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6

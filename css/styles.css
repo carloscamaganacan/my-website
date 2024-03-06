@@ -22,7 +22,11 @@ body {
     "Lucida Sans", Arial, sans-serif;
   font-size: 100%;
   width: 98%;
+<<<<<<< HEAD
   background: url("/images/Background_Image.jpg") no-repeat scroll center;
+=======
+  background: url("images/Background_Image.jpg") no-repeat scroll center;
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
   display: grid;
   grid-template: repeat(5, auto) / 1fr;
   grid-gap: 0rem;
@@ -153,10 +157,17 @@ aside {
   h1 {
     padding-top: 1em;
     margin-left: 1.5em;
+<<<<<<< HEAD
     font-size: 300%;
   }
   p {
     font-size: 150%;
+=======
+    font-size: 150%;
+  }
+  p {
+    font-size: 100%;
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
     margin: 1rem 2em;
     color: var(--color-4);
   }
@@ -164,7 +175,11 @@ aside {
     grid-area: image;
     width: 100%;
     height: auto;
+<<<<<<< HEAD
     padding: 3.5em 0;
+=======
+    padding: 1em 0;
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
   }
 }
 
