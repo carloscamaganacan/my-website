@@ -1,0 +1,93 @@
+:root {
+  --color-1: #f2972e;
+  --color-2: #135e17;
+  --color-3: #ffffff;
+  --color-4: #941421;
+  --color-5: #000;
+  --color-6: #c8dfee;
+  --color-7: #ffebc6;
+  --color-8: #00008b;
+}
+/* the styles for the elements */
+header {
+  background-color: var(--color-2);
+  font-size: 15px;
+  text-align: left;
+  padding: 0 0 10em var(--color-2);
+  border-bottom: 3px solid var(--color-2);
+}
+header h1 {
+  font: 200 normal 400% Impact;
+  line-height: 2;
+  text-align: center;
+  text-shadow: 2px 2px 4px var(--color-1);
+  color: var(--color-3);
+}
+header h2 {
+  font-size: 175%;
+  text-align: center;
+  color: var(--color-3);
+}
+header h3 {
+  font: italic 200 normal 250% Script;
+  line-height: 0;
+  text-align: center;
+  color: var(--color-3);
+}
+header img {
+  float: left;
+  padding: 20 200px;
+}
+/* Flexbox to display the menu vertically */
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  background: var(--color-6);
+  width: 150px;
+  margin: 0px 15px 15px 0px;
+  padding: 5px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  font-weight: normal;
+  color: var(--color-2);
+}
+/* navigation menu styles*/
+#nav_menu ul li.lastitem a {
+  width: 178px;
+}
+#nav_menu ul li a.current {
+  color: var(--color-8);
+}
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+  color: var(--color-3);
+  background-color: var(--color-2);
+}
+/* the styles for the body */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-size-adjust: 100%;
+  margin: 0 0;
+  padding: 0;
+}
+.centered {
+  text-align: center;
+}
+/* the styles for the footer */
+footer {
+  background-color: var(--color-2);
+  clear: both;
+}
+/* RELATIONAL SELECTOR */
+footer p {
+  text-align: center;
+  color: var(--color-3);
+  padding: 1em 0;
+}

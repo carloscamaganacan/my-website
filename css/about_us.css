@@ -169,7 +169,7 @@ main {
 .history p {
   flex-wrap: wrap;
   padding: 2em;
-  font-size: 150%;
+  font-size: 120%;
   color: var(--color-5);
   width: 95%;
   margin-right: 10px;
@@ -197,7 +197,7 @@ main {
 .about-us p {
   flex-wrap: wrap;
   padding: 2em;
-  font-size: 150%;
+  font-size: 120%;
   color: var(--color-5);
   width: 95%;
   margin-right: 10px;
@@ -329,7 +329,7 @@ footer p {
   display: none;
 }
 /* 1st media query */
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 1200px) {
   #nav_menu {
     display: none;
   }
@@ -458,3 +458,11 @@ footer p {
     padding: 0;
   }
 } 
+o;
+      width: 85%;
+      height: auto;
+    }
+  }
+>>>>>>> f175095002d80acb9251f3596d7143f076d222a6
+}
+>>>>>>> 05234e5b61407a2155404472db5ff757895ef842
