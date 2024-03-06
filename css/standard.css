@@ -10,7 +10,7 @@ html {
   --color-1: #f2972e;
   --color-2: #135e17;
   --color-3: #ffffff;
-  --color-4: #941421;
+  --color-4: #800000;
   --color-5: #000;
   --color-6: #c8dfee;
   --color-7: #ffebc6;
@@ -22,7 +22,6 @@ body {
     "Lucida Sans", Arial, sans-serif;
   font-size: 100%;
   width: 98%;
-  margin: 0 auto;
   display: grid;
   grid-template: repeat(4, auto) / 1fr;
   grid-gap: 0rem;
@@ -116,6 +115,7 @@ header {
     color: var(--color-5);
   }
 }
+
 /* The styles for the navigation menu */
 #nav_menu {
   grid-area: navi;
@@ -137,82 +137,57 @@ header {
   color: var(--color-3);
   font-weight: bold;
 }
-/* the styles for the main */
+
+/* the styles for main */
 main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-size-adjust: 100%;
-  padding: 0;
-  margin: 0 2%;
-  grid-area: main;
-  display: grid;
-  grid-template: auto / 1fr 30%;
-  grid-gap: 2.5%;
-}
-
-.centered {
-  padding: 20px 0px;
-  text-align: center;
-  font: 200 normal 300%;
-  line-height: 1;
-  text-align: center;
-}
-
-.team-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.team-member {
-  width: 250px;
-  text-align: center;
-}
-
-.team-member img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid var(--color-8);
-  margin: 2px 10px;
-}
-
-.team-member h3 {
-  font-size: 150%;
-  margin: 5px 0;
-}
-
-.team-member h4 {
-  font-weight: bolder;
   font-size: 100%;
-  color: var(--color-2);
+  margin: 2em 2%;
+  text-align: center;
+  h2,
+  p {
+    margin: 1em 0;
+  }
 }
-.team-member p {
-  font-size: 14px;
-  color: var(--color-5);
-}
+
 /* the styles for the footer */
 footer {
+  grid-area: foot;
   background-color: var(--color-2);
   clear: both;
 }
 footer p {
   text-align: center;
   color: var(--color-3);
-  padding: 1em 0;
+  padding: 1.5em 0;
 }
 #mobile_menu {
   display: none;
 }
+
 /* 1st media query */
-@media screen and (max-width: 1045px) {
+@media only screen and (max-width: 1029px) {
+  header {
+    padding-bottom: 1.5 em;
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr, 1fr;
+    grid-gap: 0.5em;
+    justify-items: center;
+  }
+  main {
+    margin: 1em;
+    h2,
+    p {
+      font-size: 95%;
+    }
+  }
   #nav_menu {
     display: none;
   }
   #mobile_menu {
     display: block;
   }
+
   .slicknav_menu {
     main {
       float: none;
@@ -221,31 +196,34 @@ footer p {
     }
     background-color: var(--color-8) !important;
   }
-  .team-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid var(--color-8);
-    margin: 1px 5px;
-  }
 }
+
 /* 2nd media query*/
-@media only screen and (max-width: 480px) {
-  body {
-    font-size: 90%;
+@media only screen and (max-width: 748px) {
+  main {
+    margin: 0;
+    h2,
+    p {
+      font-size: 85%;
+    }
   }
-  footer p {
-    font-size: 0.8 em;
+  header img {
+    float: none;
+    size: 50%;
   }
 }
 
-/* 3rd media query */
-@media only screen and (max-width: 398px) {
-  .team-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 1px solid var(--color-8);
-    margin: 0.5px 2px;
+/* 3rd media query*/
+@media only screen and (max-width: 480px) {
+  main {
+    padding: 0;
+    margin: 0;
+    h2,
+    p {
+      font-size: 75%;
+    }
+  }
+  footer p {
+    font-size: 0.8 em;
   }
 }

@@ -22,7 +22,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
   font-size: 100%;
   width: 98%;
-  background: url("images/Background_Image.jpg") no-repeat scroll center;
+  background: url("/images/Background_Image.jpg") no-repeat scroll center;
   display: grid;
   grid-template: repeat(5, auto) / 1fr;
   grid-gap: 0rem;
@@ -117,7 +117,6 @@ header {
     color: var(--color-5);
   }
 }
-
 /* The styles for the navigation menu */
 #nav_menu {
   grid-area: navi;
@@ -139,7 +138,6 @@ header {
   color: var(--color-3);
   font-weight: bold;
 }
-
 /* the styles for the main */
 main {
   margin: 1.5em 1em;
@@ -155,10 +153,10 @@ aside {
   h1 {
     padding-top: 1em;
     margin-left: 1.5em;
-    font-size: 150%;
+    font-size: 300%;
   }
   p {
-    font-size: 100%;
+    font-size: 150%;
     margin: 1rem 2em;
     color: var(--color-4);
   }
@@ -166,7 +164,7 @@ aside {
     grid-area: image;
     width: 100%;
     height: auto;
-    padding: 1em 0;
+    padding: 3.5em 0;
   }
 }
 

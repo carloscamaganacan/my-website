@@ -10,7 +10,7 @@ html {
   --color-1: #f2972e;
   --color-2: #135e17;
   --color-3: #ffffff;
-  --color-4: #800000;
+  --color-4: #941421;
   --color-5: #000;
   --color-6: #c8dfee;
   --color-7: #ffebc6;
@@ -22,6 +22,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
   font-size: 100%;
   width: 98%;
+  margin: 0 auto;
   display: grid;
   grid-template: repeat(4, auto) / 1fr;
   grid-gap: 0rem;
@@ -115,7 +116,6 @@ header {
     color: var(--color-5);
   }
 }
-
 /* The styles for the navigation menu */
 #nav_menu {
   grid-area: navi;
@@ -139,82 +139,153 @@ header {
 }
 /* the styles for the main */
 main {
-  margin: 1em 2%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-size-adjust: 100%;
+  padding: 0;
+  margin: 0 2%;
   grid-area: main;
   display: grid;
-  grid-template: auto / repeat(1fr 80%);
+  grid-template: repeat (3 auto) / 1fr 30%;
   grid-gap: 2.5%;
-  grid-template-areas: "left right";
-}
-.poster h2 {
-  padding-top: 2px;
 }
 
-/*the styles for the poster images */
-.event-poster img {
-  padding: 10px 10px;
+/* style for the link to top of page */
+.linktop {
+  margin: 10px, 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* the styles for the mission statement */
+.centered {
+  padding-top: 50px;
+  font: 200 normal 300%;
+  color: #4d4dcd;
+  line-height: 1;
+  text-align: center;
+}
+.mission {
+  display: flex;
+  gap: 20px;
+}
+.mission img {
+  float: left;
+  padding: 0.5em;
+  border: 5px solid var(--color-2);
+  width: 250px;
+  height: 300px;
+  margin: 0, 50px;
+}
+.mission p {
+  flex-wrap: wrap;
+  padding: 50px;
+  font-size: 150%;
+  color: var(--color-5);
+  width: 95%;
+  height: auto;
+}
+
+.centered1 {
+  padding: 50px 0;
+  text-align: center;
+  font: 200 normal 300%;
+  color: #4d4dcd;
+  line-height: 1;
+}
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.team-member {
+  width: 250px;
+  text-align: center;
+}
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--color-8);
+  margin: 2px 10px;
+}
+.team-member h3 {
+  font-size: 150%;
+  margin: 5px 0;
+}
+.team-member h4 {
+  font-weight: bolder;
+  font-size: 100%;
+  color: var(--color-2);
+}
+.team-member p {
+  font-size: 14px;
+  color: var(--color-5);
+  margin-bottom: 2px;
+}
+/* the styles for the event poster */
+.centered2 {
+  padding: 50px 0;
+  text-align: center;
+  font: 200 normal 300%;
+  color: #4d4dcd;
+  line-height: 1;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.flip-container {
+  perspective: 1000px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  background-color: var(--color-2);
+  border: 1px solid var(--color-5);
+  justify-content: center;
+}
+.flipper {
+  position: relative;
   width: 200px;
   height: 300px;
-  border: 5px solid var(--color-2);
-  margin: 10px 10px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
-/* This return to top of page link will appear only on the 1st media query */
-.page-link {
-  display: none;
+
+/*Do a horizontal flip when you move the mouse over the flip box container */
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
 }
-/* the styles for the TABLE */
-table {
-  margin: 2em 2dvb;
-  border: 1px solid var(--color-5);
-  border-collapse: collapse;
+
+/* Position the front and back side */
+.front,
+back {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-td.item {
-  border: 1px solid var(--color-5);
-  padding: 0.2em 0.7em;
-  background-color: var(--color-7); /* Background color of data cell */
-  text-align: left; /* Left align the content in data cell */
+
+.front {
+  z-index: 2;
 }
-th.item {
-  border: 1px solid var(--color-5);
-  padding: 0.2em 0.7em;
-  background-color: var(--color-6); /* Background color of header cell */
-  text-align: center; /* Center the content in header cell */
+
+.back {
+  color: var(--color-3);
+  background-color: var(--color-2);
+  transform: rotateY(180deg);
+  padding: 10px;
+  p {
+    font-size: 80%;
+  }
 }
-/* the styles for the aside */
-aside {
-  grid-area: left;
-  width: 100%;
-  height: auto;
-  background: url("images/MusicalNotes.jpg");
-}
-aside h4 {
-  margin-top: 1em;
-  color: var(--color-8);
-  font: normal bold 200% Impact;
-  text-align: center;
-}
-aside h2 {
-  margin: 1em 2dvb;
-  font-size: 130%;
-}
-aside h3 {
-  text-align: center;
-  font-size: 125%;
-  color: var(--color-5);
-}
-aside p {
-  margin: 1em 2dvb;
-  line-height: 1;
-  color: var(--color-5);
-}
-aside li {
-  margin: 0 4dvb;
-  color: var(--color-5);
-}
+
 /* the styles for the footer */
 footer {
-  grid-area: foot;
-  margin-top: 6em;
   background-color: var(--color-2);
   clear: both;
 }
@@ -226,21 +297,11 @@ footer p {
 #mobile_menu {
   display: none;
 }
-
-/* 1st media query*/
-@media only screen and (max-width: 1045px) {
-  header {
-    padding-bottom: 1.5 em;
-    display: grid;
-    grid-template: repeat(3, auto) / 1fr;
-    grid-gap: 0.5em;
-    justify-items: center;
-    text-align: center;
-  }
+/* 1st media query */
+@media screen and (max-width: 1045px) {
   #nav_menu {
     display: none;
   }
-
   #mobile_menu {
     display: block;
   }
@@ -252,34 +313,29 @@ footer p {
     }
     background-color: var(--color-8) !important;
   }
-
-  main {
-    margin: 0;
-    grid-template: auto auto / 1fr;
-    grid-gap: 0.5em;
-    grid-template-areas:
-      "top"
-      "bottom";
-  }
-  aside {
-    grid-area: top;
-    margin: 1.2em 0;
-  }
-  aside li {
-    margin: 0 4dvb;
-    color: var(--color-5);
-  }
-  .poster {
-    grid-area: bottom;
-    display: flex;
+  .centered {
+    padding-bottom: 50px;
+  }  
+  .mission {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
   }
-
-  .page-link {
-    margin: 1em 2%;
-    display: inline; /* display link return to top of page */
+  .mission p {
+    float: none;
+    font-size: 110%;
+    padding: 25px;
+  }
+  .mission img {
+    display: grid;
+    width: 200px;
+    height: 300px;
+  }
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--color-8);
+    margin: 1px 5px;
   }
 }
 
@@ -287,17 +343,34 @@ footer p {
 @media only screen and (max-width: 480px) {
   body {
     font-size: 90%;
+    justify-items: center;
+    text-align: center;
   }
-    aside {
-    float: none;
-    width: 100%;
+  .centered .centered1 .centered2 {
+    padding: 25px 0;
+    font-size: 200%;
   }
-  aside image {
+  .mission p {
+    font-size: 100%;
     padding: 0;
+  }
+  .mission img {
+    float: center;
     margin: 0;
+    padding: 0;
+    border: 2px solid var(--color-2);
+    width: 100px;
+    height: 75px;
   }
   footer p {
-    font-size: 0.8em;
+    font-size: 0.8 em;
   }
 }
 
+/* 3rd media query*/
+@media only screen and (max-width: 398px) {
+  .team-member img {
+    border: 1px solid var(--color-8);
+    margin: 0.5px 2px;
+  }
+}
