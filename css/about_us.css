@@ -179,7 +179,7 @@ main {
   display: flex;
   gap: 20px;
 }
-.history img  {
+.history img {
   float: right;
   padding: 5px;
   border: 10px solid var(--color-2);
@@ -443,7 +443,7 @@ footer p {
 /*3rd media query*/
 @media only screen and (max-width: 398px) {
   .team-member h3 {
-     font-size: 110%
+    font-size: 110%;
   }
   .team-member img {
     border: 1px solid var(--color-8);
@@ -457,12 +457,8 @@ footer p {
     font-size: 88%;
     padding: 0;
   }
-} 
-o;
-      width: 85%;
-      height: auto;
-    }
+  footer p {
+    width: 85%;
+    height: auto;
   }
->>>>>>> f175095002d80acb9251f3596d7143f076d222a6
 }
->>>>>>> 05234e5b61407a2155404472db5ff757895ef842
