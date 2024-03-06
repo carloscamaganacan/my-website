@@ -138,35 +138,34 @@ header {
   color: var(--color-3);
   font-weight: bold;
 }
+
 /* the styles for the main */
 main {
-  margin: 1.5em 1em;
-}
+    margin: 1.5em 1em;
+  }
+
 /* The style for the aside */
 aside {
   grid-area: aside;
-  margin: 0px 2%;
   width: 39%;
   height: 100%;
-  background-color: var(--color-7);
+  background-color: var(--color-7);}
 
-  h1 {
+aside h1 {
     padding-top: 1em;
-    margin-left: 1.5em;
-    font-size: 300%;
-  }
-  p {
+    margin: 0 1em;
+    font-size: 300%; }
+
+aside p {
     font-size: 150%;
-    margin: 1rem 2em;
-    color: var(--color-4);
-  }
-  img {
+    margin: 1em 2em;
+    color: var(--color-4);}
+
+aside  img {
     grid-area: image;
-    width: 100%;
+    width: 100%;  
     height: auto;
-    padding: 3.5em 0;
-  }
-}
+    padding-bottom: 9em;}
 
 /* The styles for the footer */
 footer {
@@ -182,13 +181,15 @@ footer p {
   padding: 1.5em 0;
 }
 
+/* turn off Slicknav menu */
 #mobile_menu {
   display: none;
 }
 
 /* 1st media query */
-@media only screen and (max-width: 1620px) {
+@media only screen and (max-width: 1307px) {
   aside h1 {
+    margin: 0 1.5em;
     font-size: 150%; /* Reduce the h1 font size from 150% */
   }
   aside p {
@@ -197,16 +198,6 @@ footer p {
 }
 
 /* 2nd media query */
-@media only screen and (max-width: 1307px) {
-  aside h1 {
-    font-size: 110%; /* Reduce the h1 font size from 150% */
-  }
-  aside p {
-    font-size: 95%; /* Reduce the p font size to 95% */
-  }
-}
-
-/* 3rd media query */
 @media only screen and (max-width: 780px) {
   header {
     display: grid;
@@ -224,6 +215,7 @@ footer p {
     display: block;
     grid-area: navi;
   }
+  /* Slicknav menu setting */
   .slicknav_menu {
     aside {
       float: none;
@@ -231,16 +223,12 @@ footer p {
     }
     background-color: var(--color-8) !important;
   }
+  /* adjust body margin to none */
   body {
     margin: 0;
   }
-  main {
-    margin: 1em;
-    h2,
-    p {
-      font-size: 85%;
-    }
-  }
+
+  /* adjust aside setting */
   aside {
     margin: 0;
     float: none;
@@ -253,12 +241,12 @@ footer p {
 footer {
   margin-top: 0;
 }
-
-/* 4th media query (383 pixels or less) */
-@media only screen and (max-width: 383px) {
+/* 3rd media query (383 pixels or less) */
+@media only screen and (max-width: 430px) {
   aside {
     float: none;
     width: 100%;
+    font-size: 85%;
   }
   aside image {
     padding: 0;

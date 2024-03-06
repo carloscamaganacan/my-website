@@ -24,12 +24,13 @@ body {
   width: 98%;
   margin: 0 auto;
   display: grid;
-  grid-template: repeat(4, auto) / 1fr;
+  grid-template: repeat(5, auto) / 1fr;
   grid-gap: 0rem;
   grid-template-areas:
     "head"
     "navi"
     "main"
+    "aside"
     "foot";
 }
 a:focus,
@@ -156,7 +157,8 @@ main {
   text-align: center;
 }
 
-/* the styles for the mission statement */
+/* the styles for the about-us statement */
+
 .centered {
   padding-top: 50px;
   font: 200 normal 300%;
@@ -164,28 +166,57 @@ main {
   line-height: 1;
   text-align: center;
 }
-.mission {
-  display: flex;
-  gap: 20px;
-}
-.mission img {
-  float: left;
-  padding: 0.5em;
-  border: 5px solid var(--color-2);
-  width: 250px;
-  height: 300px;
-  margin: 0, 50px;
-}
-.mission p {
+.history p {
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 2em;
   font-size: 150%;
   color: var(--color-5);
   width: 95%;
+  margin-right: 10px;
   height: auto;
 }
-
+.history {
+  display: flex;
+  gap: 20px;
+}
+.history img  {
+  float: right;
+  padding: 5px;
+  border: 10px solid var(--color-2);
+  width: 500px;
+  height: 400px;
+  margin: 10px;
+}
 .centered1 {
+  padding-top: 50px;
+  font: 200 normal 300%;
+  color: #4d4dcd;
+  line-height: 1;
+  text-align: center;
+}
+.about-us p {
+  flex-wrap: wrap;
+  padding: 2em;
+  font-size: 150%;
+  color: var(--color-5);
+  width: 95%;
+  margin-right: 10px;
+  height: auto;
+}
+.about-us {
+  display: flex;
+  gap: 20px;
+}
+.about-us img {
+  float: left;
+  padding: 5px;
+  border: 10px solid var(--color-2);
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+}
+
+.centered2 {
   padding: 50px 0;
   text-align: center;
   font: 200 normal 300%;
@@ -216,7 +247,7 @@ main {
 }
 .team-member h4 {
   font-weight: bolder;
-  font-size: 100%;
+  font-size: 120%;
   color: var(--color-2);
 }
 .team-member p {
@@ -225,7 +256,7 @@ main {
   margin-bottom: 2px;
 }
 /* the styles for the event poster */
-.centered2 {
+.centered3 {
   padding: 50px 0;
   text-align: center;
   font: 200 normal 300%;
@@ -314,18 +345,41 @@ footer p {
     background-color: var(--color-8) !important;
   }
   .centered {
-    padding-bottom: 50px;
-  }  
-  .mission {
+    padding-bottom: 30px;
+  }
+  .centered1 {
+    padding-bottom: 30px;
+  }
+  .centered2 {
+    padding-bottom: 30px;
+  }
+  .centered3 {
+    padding-bottom: 30px;
+  }
+  .history {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .mission p {
+  .history p {
     float: none;
     font-size: 110%;
     padding: 25px;
   }
-  .mission img {
+  .history img {
+    display: grid;
+    width: 300px;
+    height: 200px;
+  }
+  .about-us {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-us p {
+    float: none;
+    font-size: 110%;
+    padding: 25px;
+  }
+  .about-us img {
     display: grid;
     width: 200px;
     height: 300px;
@@ -334,43 +388,73 @@ footer p {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid var(--color-8);
+    border: 1px solid var(--color-8);
     margin: 1px 5px;
   }
 }
 
 /* 2nd media query*/
 @media only screen and (max-width: 480px) {
-  body {
-    font-size: 90%;
-    justify-items: center;
-    text-align: center;
-  }
-  .centered .centered1 .centered2 {
+  .centered {
     padding: 25px 0;
-    font-size: 200%;
+    font-size: 120%;
   }
-  .mission p {
-    font-size: 100%;
+  .centered1 {
+    padding: 25px 0;
+    font-size: 120%;
+  }
+  .centered2 {
+    padding: 25px 0;
+    font-size: 120%;
+  }
+  .centered3 {
+    padding: 25px 0;
+    font-size: 120%;
+  }
+  .history p {
+    font-size: 95%;
     padding: 0;
   }
-  .mission img {
+  .history img {
     float: center;
     margin: 0;
+    padding: 1px;
+    border: 5px solid var(--color-2);
+    width: 300px;
+    height: 200px;
+  }
+  .about-us p {
+    font-size: 95%;
     padding: 0;
-    border: 2px solid var(--color-2);
-    width: 100px;
-    height: 75px;
+  }
+  .about-us img {
+    float: center;
+    margin: 0;
+    padding: 1px;
+    border: 5px solid var(--color-2);
+    width: 200px;
+    height: 300px;
   }
   footer p {
     font-size: 0.8 em;
   }
 }
 
-/* 3rd media query*/
+/*3rd media query*/
 @media only screen and (max-width: 398px) {
+  .team-member h3 {
+     font-size: 110%
+  }
   .team-member img {
     border: 1px solid var(--color-8);
     margin: 0.5px 2px;
   }
-}
+  .about-us p {
+    font-size: 88%;
+    padding: 0;
+  }
+  .history p {
+    font-size: 88%;
+    padding: 0;
+  }
+} 
