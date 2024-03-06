@@ -5,7 +5,7 @@
 html {
   background-color: var(--color-3);
 }
-/* CSS variables for colors */
+/* variables for colors */
 :root {
   --color-1: #f2972e;
   --color-2: #135e17;
@@ -215,7 +215,6 @@ main {
   height: 400px;
   margin: 10px;
 }
-
 .centered2 {
   padding: 50px 0;
   text-align: center;
@@ -285,12 +284,10 @@ main {
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-
 /*Do a horizontal flip when you move the mouse over the flip box container */
 .flip-container:hover .flipper {
   transform: rotateY(180deg);
 }
-
 /* Position the front and back side */
 .front,
 back {
@@ -314,7 +311,6 @@ back {
     font-size: 80%;
   }
 }
-
 /* the styles for the footer */
 footer {
   background-color: var(--color-2);
@@ -392,7 +388,6 @@ footer p {
     margin: 1px 5px;
   }
 }
-
 /* 2nd media query*/
 @media only screen and (max-width: 480px) {
   .centered {
@@ -439,7 +434,6 @@ footer p {
     font-size: 0.8 em;
   }
 }
-
 /*3rd media query*/
 @media only screen and (max-width: 398px) {
   .team-member h3 {
