@@ -157,19 +157,21 @@ main {
   text-align: center;
 }
 
-/* the styles for the about-us statement */
+/* the styles for the main */
 
-.centered {
+section h5 {
   padding-top: 50px;
-  font: 200 normal 300%;
+  padding-bottom: 2em;
+  font-size: 200%;
   color: #4d4dcd;
   line-height: 1;
   text-align: center;
 }
+
 .history p {
+  padding: 0 2em 2em 2em;
   flex-wrap: wrap;
-  padding: 2em;
-  font-size: 120%;
+  font-size: 125%;
   color: var(--color-5);
   width: 95%;
   margin-right: 10px;
@@ -187,40 +189,26 @@ main {
   height: 400px;
   margin: 10px;
 }
-.centered1 {
-  padding-top: 50px;
-  font: 200 normal 300%;
-  color: #4d4dcd;
-  line-height: 1;
-  text-align: center;
-}
-.about-us p {
+.mission p {
+  padding: 0 2em 2em 2em;
   flex-wrap: wrap;
-  padding: 2em;
-  font-size: 120%;
+  font-size: 125%;
   color: var(--color-5);
   width: 95%;
   margin-right: 10px;
   height: auto;
 }
-.about-us {
+.mission {
   display: flex;
   gap: 20px;
 }
-.about-us img {
+.mission img {
   float: left;
   padding: 5px;
   border: 10px solid var(--color-2);
   width: 300px;
   height: 400px;
   margin: 10px;
-}
-.centered2 {
-  padding: 50px 0;
-  text-align: center;
-  font: 200 normal 300%;
-  color: #4d4dcd;
-  line-height: 1;
 }
 .team-container {
   display: flex;
@@ -255,13 +243,6 @@ main {
   margin-bottom: 2px;
 }
 /* the styles for the event poster */
-.centered3 {
-  padding: 50px 0;
-  text-align: center;
-  font: 200 normal 300%;
-  color: #4d4dcd;
-  line-height: 1;
-}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -340,18 +321,10 @@ footer p {
     }
     background-color: var(--color-8) !important;
   }
-  .centered {
+  section h5 {
     padding-bottom: 30px;
   }
-  .centered1 {
-    padding-bottom: 30px;
-  }
-  .centered2 {
-    padding-bottom: 30px;
-  }
-  .centered3 {
-    padding-bottom: 30px;
-  }
+
   .history {
     flex-wrap: wrap;
     justify-content: center;
@@ -366,16 +339,16 @@ footer p {
     width: 300px;
     height: 200px;
   }
-  .about-us {
+  .mission {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .about-us p {
+  .mission p {
     float: none;
     font-size: 110%;
     padding: 25px;
   }
-  .about-us img {
+  .mission img {
     display: grid;
     width: 200px;
     height: 300px;
@@ -390,19 +363,7 @@ footer p {
 }
 /* 2nd media query*/
 @media only screen and (max-width: 480px) {
-  .centered {
-    padding: 25px 0;
-    font-size: 120%;
-  }
-  .centered1 {
-    padding: 25px 0;
-    font-size: 120%;
-  }
-  .centered2 {
-    padding: 25px 0;
-    font-size: 120%;
-  }
-  .centered3 {
+  section h5 {
     padding: 25px 0;
     font-size: 120%;
   }
@@ -418,11 +379,11 @@ footer p {
     width: 300px;
     height: 200px;
   }
-  .about-us p {
+  .mission p {
     font-size: 95%;
     padding: 0;
   }
-  .about-us img {
+  .mission img {
     float: center;
     margin: 0;
     padding: 1px;
@@ -432,6 +393,7 @@ footer p {
   }
   footer p {
     font-size: 0.8 em;
+    text-align: center;
   }
 }
 /*3rd media query*/
@@ -443,7 +405,7 @@ footer p {
     border: 1px solid var(--color-8);
     margin: 0.5px 2px;
   }
-  .about-us p {
+  .mission p {
     font-size: 88%;
     padding: 0;
   }
@@ -454,5 +416,6 @@ footer p {
   footer p {
     width: 85%;
     height: auto;
+    text-align: center;
   }
 }
