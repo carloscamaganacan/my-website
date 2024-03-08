@@ -18,7 +18,6 @@ main {
 }
 
 /* the styles for the main */
-
 section h1 {
   padding-top: 70px;
   padding-bottom: 1em;
@@ -178,7 +177,6 @@ back {
     background-color: var(--color-8) !important;
   }
   section h1 {
-    text-align: center;
     padding-bottom: 30px;
   }
   .history {
@@ -214,7 +212,6 @@ back {
 @media only screen and (max-width: 550px) {
   section h1 {
     padding: 25px 0;
-    font-size: 120%;
   }
   .group p {
     font-size: 95%;
