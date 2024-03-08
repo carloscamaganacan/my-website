@@ -1,6 +1,6 @@
 /* Background image for the main page */
 body {
-  background: url("/images/Background_Image.jpg") no-repeat scroll center;
+  background: url("images/Background_Image.jpg") no-repeat scroll center;
 }
 /* the styles for the main */
 main {
@@ -35,7 +35,7 @@ aside img {
 }
 
 #mobile_menu {
-  display: none;  /* turn off Slicknav menu */
+  display: none; /* turn off Slicknav menu */
 }
 
 /* 1st media query */
@@ -59,14 +59,15 @@ aside img {
     text-align: center;
   }
   #nav_menu {
-    display: none;   /* hide navigational menu */
+    display: none; /* hide navigational menu */
   }
   #mobile_menu {
-    display: block;   /* display Slicknav menu */
+    display: block; /* display Slicknav menu */
     grid-area: navi;
   }
 
-  .slicknav_menu {    /* Slicknav menu setting */
+  .slicknav_menu {
+    /* Slicknav menu setting */
     aside {
       float: none;
       width: 100%;

@@ -27,7 +27,7 @@ aside {
   width: 100%;
   height: max-content;
   margin: 1.2em 0;
-  background: url(/images/MusicalNotes.jpg);
+  background: url(images/MusicalNotes.jpg);
   background-size: cover;
 }
 aside h4 {
