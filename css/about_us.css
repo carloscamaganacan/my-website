@@ -1,143 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-html {
-  background-color: var(--color-3);
-}
-/* variables for colors */
-:root {
-  --color-1: #f2972e;
-  --color-2: #135e17;
-  --color-3: #ffffff;
-  --color-4: #941421;
-  --color-5: #000;
-  --color-6: #c8dfee;
-  --color-7: #ffebc6;
-  --color-8: #00008b;
-  --color-9: #ffff00;
-}
-body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 100%;
-  width: 98%;
-  margin: 0 auto;
-  display: grid;
-  grid-template: repeat(5, auto) / 1fr;
-  grid-gap: 0rem;
-  grid-template-areas:
-    "head"
-    "navi"
-    "main"
-    "aside"
-    "foot";
-}
-a:focus,
-a:hover {
-  font-style: italic;
-}
-/* the styles for the header */
-header {
-  grid-area: head;
-  background-image: -moz-linear-gradient(
-    30deg,
-    var(--color-2) 0%,
-    var(--color-2) 30%,
-    var(--color-3) 50%,
-    var(--color-2) 80%,
-    var(--color-2) 100%
-  );
-  background-image: -webkit-linear-gradient(
-    30deg,
-    var(--color-2) 0%,
-    var(--color-2) 30%,
-    var(--color-3) 50%,
-    var(--color-2) 80%,
-    var(--color-2) 100%
-  );
-  background-image: -o-linear-gradient(
-    30deg,
-    var(--color-2) 0%,
-    var(--color-2) 30%,
-    var(--color-3) 50%,
-    var(--color-2) 80%,
-    var(--color-2) 100%
-  );
-  background-image: linear-gradient(
-    30deg,
-    var(--color-2) 0%,
-    var(--color-2) 30%,
-    var(--color-3) 50%,
-    var(--color-2) 80%,
-    var(--color-2) 100%
-  );
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-.logo img {
-  width: 100px;
-  height: auto;
-  float: left;
-  padding: 0 2%;
-  margin-top: 1px;
-  margin-right: 1px;
-}
-.band-info {
-  h1 {
-    font-family: "Bruno Ace SC", sans-serif;
-    font-style: normal;
-    margin-top: 5px;
-    font-size: 200%;
-    font-weight: bolder;
-    line-height: 1;
-    text-align: center;
-    text-shadow: 2px 2px 4px gray;
-    color: var(--color-5);
-  }
-  h2 {
-    font-family: "Bruno Ace SC", sans-serif;
-    font-style: normal;
-    font-size: 100%;
-    font-weight: bolder;
-    text-align: center;
-    color: var(--color-5);
-  }
-  h3 {
-    font-family: "Smooch", cursive;
-    font-style: normal;
-    font-size: 200%;
-    font-weight: normal;
-    text-align: center;
-    color: var(--color-5);
-  }
-}
-/* The styles for the navigation menu */
-#nav_menu {
-  grid-area: navi;
-}
-#nav_menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template: auto / repeat(7, 1fr);
-  align-content: center;
-}
-#nav_menu ul li a {
-  display: block;
-  text-align: center;
-  padding: 1em 0;
-  text-decoration: none;
-  background-color: var(--color-8);
-  color: var(--color-3);
-  font-weight: bold;
-}
 /* the styles for the main */
 main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -159,57 +19,60 @@ main {
 
 /* the styles for the main */
 
-section h5 {
-  padding-top: 50px;
-  padding-bottom: 2em;
+section h1 {
+  padding-top: 70px;
+  padding-bottom: 1em;
   font-size: 200%;
   color: #4d4dcd;
   line-height: 1;
   text-align: center;
 }
 
-.history p {
-  padding: 0 2em 2em 2em;
-  flex-wrap: wrap;
-  font-size: 125%;
-  color: var(--color-5);
-  width: 95%;
-  margin-right: 10px;
-  height: auto;
-}
+/* Style for the Our History Section */
 .history {
   display: flex;
   gap: 20px;
+  justify-content: center;
+}
+.history p {
+  max-width: 40em;
+  padding: 2em;
+  flex-wrap: wrap;
+  font-size: 120%;
+  color: var(--color-5);
+  height: auto;
 }
 .history img {
-  float: right;
   padding: 5px;
   border: 10px solid var(--color-2);
   width: 500px;
   height: 400px;
   margin: 10px;
 }
-.mission p {
-  padding: 0 2em 2em 2em;
-  flex-wrap: wrap;
-  font-size: 125%;
-  color: var(--color-5);
-  width: 95%;
-  margin-right: 10px;
-  height: auto;
-}
+
+/* Style for the Our Mission Section */
 .mission {
   display: flex;
   gap: 20px;
+  justify-content: center;
+}
+.mission p {
+  max-width: 40em;
+  padding: 2em;
+  flex-wrap: wrap;
+  font-size: 120%;
+  color: var(--color-5);
+  height: auto;
 }
 .mission img {
-  float: left;
   padding: 5px;
   border: 10px solid var(--color-2);
   width: 300px;
   height: 400px;
   margin: 10px;
 }
+
+/* Style for Meet the Team Section */
 .team-container {
   display: flex;
   flex-wrap: wrap;
@@ -242,7 +105,7 @@ section h5 {
   color: var(--color-5);
   margin-bottom: 2px;
 }
-/* the styles for the event poster */
+/* The styles for the flipping Past Performaces Poster */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -292,28 +155,20 @@ back {
     font-size: 80%;
   }
 }
-/* the styles for the footer */
-footer {
-  background-color: var(--color-2);
-  clear: both;
-}
-footer p {
-  text-align: center;
-  color: var(--color-3);
-  padding: 1em 0;
-}
+
 #mobile_menu {
-  display: none;
+  display: none;  /* hide navigational menu */
 }
+
 /* 1st media query */
 @media screen and (max-width: 1200px) {
   #nav_menu {
-    display: none;
+    display: none;  /* hide navigational menu */
   }
   #mobile_menu {
-    display: block;
+    display: block;  /* display Slicknav menu */
   }
-  .slicknav_menu {
+  .slicknav_menu {   /* Slicknav menu setting */
     main {
       float: none;
       padding: 2.5%;
@@ -321,7 +176,8 @@ footer p {
     }
     background-color: var(--color-8) !important;
   }
-  section h5 {
+  section h1 {
+    text-align: center;
     padding-bottom: 30px;
   }
 
@@ -330,15 +186,20 @@ footer p {
     justify-content: center;
   }
   .history p {
-    float: none;
     font-size: 110%;
     padding: 25px;
   }
+
   .history img {
-    display: grid;
-    width: 300px;
-    height: 200px;
+    align-items: center;
+    max-width: 100%;
+    float: none;
+    border: 10px solid var(--color-2);
+    width: 400px;
+    height: 300px;
+    margin: 10px;
   }
+
   .mission {
     flex-wrap: wrap;
     justify-content: center;
@@ -361,27 +222,25 @@ footer p {
     margin: 1px 5px;
   }
 }
+
 /* 2nd media query*/
-@media only screen and (max-width: 480px) {
-  section h5 {
+@media only screen and (max-width: 550px) {
+  section h1 {
     padding: 25px 0;
     font-size: 120%;
   }
   .history p {
     font-size: 95%;
-    padding: 0;
   }
   .history img {
     float: center;
-    margin: 0;
-    padding: 1px;
     border: 5px solid var(--color-2);
     width: 300px;
     height: 200px;
+    margin: 0;
   }
   .mission p {
     font-size: 95%;
-    padding: 0;
   }
   .mission img {
     float: center;
@@ -397,7 +256,7 @@ footer p {
   }
 }
 /*3rd media query*/
-@media only screen and (max-width: 398px) {
+@media only screen and (max-width: 426px) {
   .team-member h3 {
     font-size: 110%;
   }
@@ -407,11 +266,9 @@ footer p {
   }
   .mission p {
     font-size: 88%;
-    padding: 0;
   }
   .history p {
     font-size: 88%;
-    padding: 0;
   }
   footer p {
     width: 85%;
