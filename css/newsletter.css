@@ -56,7 +56,7 @@ aside li {
   color: var(--color-5);
 }
 #mobile_menu {
-  display: none;  /* turn off Slicknav menu */
+  display: none; /* turn off Slicknav menu */
 }
 
 /* 1st media query*/
@@ -70,12 +70,13 @@ aside li {
     text-align: center;
   }
   #nav_menu {
-    display: none;  /* turn off Slicknav menu */
+    display: none; /* turn off Slicknav menu */
   }
   #mobile_menu {
-    display: block;   /* display Slicknav menu */
+    display: block; /* display Slicknav menu */
   }
-  .slicknav_menu {    /* Slicknav menu setting */
+  .slicknav_menu {
+    /* Slicknav menu setting */
     main {
       float: none;
       padding: 2.5%;
@@ -101,35 +102,35 @@ aside li {
     color: var(--color-5);
   }
 
-/* 2nd media query*/
-@media only screen and (max-width: 480px) {
-  body {
-    font-size: 90%;
-  }
-  table {
-    margin: 2em 2dvb;
-    border: 1px solid var(--color-5);
-    border-collapse: collapse;
-  }
-  aside {
-    float: none;
-    width: 100%;
-  }
-  aside image {
-    padding: 0;
-    margin: 0;
-  }
-  aside h2 h3 p {
-    margin: 0;
-    line-height: 0;
-  }
+  /* 2nd media query*/
+  @media only screen and (max-width: 480px) {
+    body {
+      font-size: 90%;
+    }
+    table {
+      margin: 2em 2dvb;
+      border: 1px solid var(--color-5);
+      border-collapse: collapse;
+    }
+    aside {
+      float: none;
+      width: 100%;
+    }
+    aside image {
+      padding: 0;
+      margin: 0;
+    }
+    aside h2 h3 p {
+      margin: 0;
+      line-height: 0;
+    }
 
-  table {
-    margin: 0 1em;
-  }
+    table {
+      margin: 0 1em;
+    }
 
-  footer p {
-    font-size: 0.8em;
+    footer p {
+      font-size: 0.8em;
+    }
   }
-}
 }

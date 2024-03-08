@@ -35,10 +35,10 @@ body {
     "foot";
 }
  /* Change font style to italic when cursor hovers the nav menu */
-a:focus,
-a:hover {
+a:hover, a:focus {
   font-style: italic;
-}
+  background:-webkit-linear-gradient(top,  #135e17 0%,#f6f6f6 47%,#135e17 100%);
+} 
 /* the styles for the header */
 header {
   grid-area: head;
