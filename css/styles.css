@@ -4,7 +4,7 @@ body {
 }
 /* the styles for the main */
 main {
-  margin: 1.5em 1em;
+  margin: 1.5em 0;
 }
 /* The style for the aside */
 aside {
@@ -31,7 +31,7 @@ aside img {
   grid-area: image;
   width: 100%;
   height: auto;
-  padding-bottom: 3.5em;
+  padding-bottom: 3.3em;
 }
 
 #mobile_menu {
