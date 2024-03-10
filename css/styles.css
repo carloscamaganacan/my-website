@@ -4,18 +4,19 @@ body {
 }
 /* the styles for the main */
 main {
-  margin: 1.5em 0;
+  /* margin: 1.5em 0; */
 }
 /* The style for the aside */
 aside {
+  margin: 0;
   grid-area: aside;
   width: 39%;
-  height: 100%;
+  height: 85%;
   background-color: var(--color-7);
 }
 
 aside h1 {
-  padding-top: 1em;
+  padding-top: .5em;
   margin: 0 1em;
   font-size: 300%;
 }
@@ -31,7 +32,7 @@ aside img {
   grid-area: image;
   width: 100%;
   height: auto;
-  padding-bottom: 3.3em;
+  padding-bottom: 3em;
 }
 
 #mobile_menu {

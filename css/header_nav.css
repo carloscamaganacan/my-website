@@ -2,10 +2,9 @@
   margin: 0;
   padding: 0;
 }
-html, body {
+html {
+  width: 100%;
   background-color: var(--color-3);
-  min-width: 100%;
-  min-height: 100%;
 }
 /* CSS variables for colors */
 :root {
@@ -25,7 +24,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 100%;
-  width: 98%;
+  width: 100%;
   display: grid;
   grid-template: repeat(5, auto) / 1fr;
   grid-gap: 0rem;
@@ -39,7 +38,7 @@ body {
  /* Change font style to italic when cursor hovers the nav menu */
 a:hover, a:focus {
   font-style: italic;
-  background:-webkit-linear-gradient(top,  #135e17 0%,#f6f6f6 47%,#135e17 100%);
+  background-color: var(--color-5);
 } 
 /* the styles for the header */
 header {
