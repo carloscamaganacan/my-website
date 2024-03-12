@@ -54,6 +54,9 @@ aside li {
   margin: 0 5dvb;
   color: var(--color-5);
 }
+footer {
+  position: static;
+}
 #mobile_menu {
   display: none; /* turn off Slicknav menu */
 }
