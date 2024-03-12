@@ -154,9 +154,6 @@ back {
     font-size: 80%;
   }
 }
-footer {
-  position: static;
-}
 #mobile_menu {
   display: none; /* hide navigational menu */
 }

@@ -32,10 +32,7 @@ aside img {
   grid-area: image;
   width: 100%;
   height: auto;
-  padding-bottom: 5em;
-}
-footer {
-  position: fixed;
+  padding-bottom: 3.5em;
 }
 #mobile_menu {
   display: none; /* turn off Slicknav menu */

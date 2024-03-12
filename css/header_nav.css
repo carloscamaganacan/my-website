@@ -36,7 +36,7 @@ body {
     "foot";
 }
  /* Change font style to italic when cursor hovers the nav menu */
-a:hover, a:focus {
+a:hover {
   font-style: italic;
   color: white;
   background-color: var(--color-8); 

@@ -3,7 +3,12 @@ main {
   grid-area: main;
   display: grid;
 }
-
+/* the style for the link to top of page */
+.linktop {
+  margin: 10px, 0;
+  padding: 10px 0;
+  text-align: center;
+}
 /* the styles for the TABLE */
 table {
   margin: 2em 3dvb;
@@ -28,6 +33,7 @@ aside {
   height: max-content;
   background: url(../images/MusicalNotes.jpg);
   background-size: cover;
+  margin: 0;
 }
 aside h4 {
   font-family: "Bruno Ace SC", sans-serif;
@@ -54,9 +60,7 @@ aside li {
   margin: 0 5dvb;
   color: var(--color-5);
 }
-footer {
-  position: static;
-}
+
 #mobile_menu {
   display: none; /* turn off Slicknav menu */
 }
@@ -97,7 +101,7 @@ footer {
   }
   aside {
     grid-area: top;
-    margin: 1.2em 0;
+    margin: 0;
   }
   aside li {
     margin: 0 4dvb;
