@@ -35,11 +35,11 @@ body {
     "aside"
     "foot";
 }
- /* Change font style to italic when cursor hovers the nav menu */
+/* Change font style to italic when cursor hovers the nav menu */
 a:hover {
   font-style: italic;
   color: white;
-  background-color: var(--color-8); 
+  background-color: var(--color-8);
 }
 /* the styles for the header */
 header {
@@ -87,11 +87,12 @@ header {
 }
 /* the style for the header logo */
 .logo img {
-  width: 100px;
+  width: 80px;
   height: auto;
   float: left;
   padding: 0 2%;
   margin-top: 1px;
+  margin-bottom: 0;
   margin-right: 1px;
 }
 /* the style for the header title & subtitle */
@@ -99,7 +100,7 @@ header {
   h1 {
     font-family: "Bruno Ace SC", sans-serif;
     font-style: normal;
-    margin-top: 5px;
+    margin-top: 0;
     font-size: 200%;
     font-weight: bolder;
     line-height: 1;
@@ -136,15 +137,22 @@ header {
   grid-template: auto / repeat(7, 1fr);
   align-content: center;
 }
- #nav_menu ul li a {
-    display: block;
-    text-align: center;
-    padding: 1em 0;
-    text-decoration: none;
-    background-color: var(--color-8);
-    color: var(--color-3);
-    font-weight: bold;
+#nav_menu ul li a {
+  display: block;
+  text-align: center;
+  padding: 1em 0;
+  text-decoration: none;
+  background-color: var(--color-8);
+  color: var(--color-3);
+  font-weight: bold;
 }
-#nav_menu ul li a:hover{
- color: var(--color-1);
+#nav_menu ul li a:hover {
+  color: var(--color-1);
+}
+#nav_menu ul li a.current {
+  color: var(--color-3);
+  text-decoration:underline;
+}
+#nav_menu a:active {
+ text-decoration:underline;
 }

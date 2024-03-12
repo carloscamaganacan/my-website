@@ -32,7 +32,7 @@ aside img {
   grid-area: image;
   width: 100%;
   height: auto;
-  padding-bottom: 3.5em;
+  padding-bottom: 4em;
 }
 #mobile_menu {
   display: none; /* turn off Slicknav menu */
@@ -68,7 +68,7 @@ aside img {
 
   .slicknav_menu {
     /* Slicknav menu setting */
-    aside {
+    main {
       float: none;
       width: 100%;
     }
@@ -93,7 +93,7 @@ footer {
   margin-top: 0;
 }
 /* 3rd media query (383 pixels or less) */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
   aside {
     float: none;
     width: 100%;
@@ -104,6 +104,6 @@ footer {
     margin: 0;
   }
   footer p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 }

@@ -208,7 +208,7 @@ back {
 }
 
 /* 2nd media query*/
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
   section h1 {
     padding: 25px 0;
   }
@@ -230,7 +230,7 @@ back {
     height: 300px;
   }
   footer p {
-    font-size: 0.8 em;
+    font-size: 1em;
   }
 }
 /*3rd media query*/
@@ -247,5 +247,12 @@ back {
   }
   .group p {
     font-size: 88%;
+  }
+  main {
+    font-size: 85%;
+    padding: 0;
+  }
+  header {
+    font-size: 75%;
   }
 }

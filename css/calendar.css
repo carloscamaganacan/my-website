@@ -51,18 +51,10 @@ main {
   }
 }
 
-/* 2nd media query*/
+/*2nd media query*/
 @media only screen and (max-width: 748px) {
-  main {
-    margin: 0;
-    h2,
-    p {
-      font-size: 85%;
-    }
-  }
-  header img {
-    float: none;
-    size: 50%;
+  body {
+    font-size: 85%;
   }
 }
 
@@ -71,12 +63,16 @@ main {
   main {
     padding: 0;
     margin: 0;
-    h2,
-    p {
-      font-size: 75%;
-    }
   }
   footer p {
-    font-size: 0.8 em;
+    font-size: 1em;
+  }
+}
+
+/* 4th media query */
+@media only screen and (max-width: 347px) {
+  body {
+    font-size: 75%;
+    padding: 0;
   }
 }
