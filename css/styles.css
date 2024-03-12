@@ -1,10 +1,9 @@
 /* Background image for the main page */
 body {
+  width: 100%;
+  height: max-content;
   background: url("../images/Background_Image.jpg") no-repeat scroll center;
-}
-/* the styles for the main */
-main {
-  /* margin: 1.5em 0; */
+  background-size: cover;
 }
 /* The style for the aside */
 aside {
@@ -16,7 +15,7 @@ aside {
 }
 
 aside h1 {
-  padding-top: .5em;
+  padding-top: 0.5em;
   margin: 0 1em;
   font-size: 300%;
 }

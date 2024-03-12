@@ -40,7 +40,7 @@ a:hover, a:focus {
   font-style: italic;
   color: white;
   background-color: var(--color-8); 
-} 
+}
 /* the styles for the header */
 header {
   grid-area: head;
@@ -136,12 +136,15 @@ header {
   grid-template: auto / repeat(7, 1fr);
   align-content: center;
 }
-#nav_menu ul li a {
-  display: block;
-  text-align: center;
-  padding: 1em 0;
-  text-decoration: none;
-  background-color: var(--color-8);
-  color: var(--color-3);
-  font-weight: bold;
+ #nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: var(--color-8);
+    color: var(--color-3);
+    font-weight: bold;
+}
+#nav_menu ul li a:hover{
+ color: var(--color-1);
 }

@@ -1,11 +1,14 @@
 /* the styles for the footer */
 footer {
-    grid-area: foot;
-    background-color: var(--color-2);
-    clear: both;
-  }
-  footer p {
-    text-align: center;
-    color: var(--color-3);
-    padding: 1.5em 0;
-  }
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  grid-area: foot;
+  background-color: var(--color-2);
+  clear: both;
+}
+footer p {
+  text-align: center;
+  color: var(--color-3);
+  padding: 1.5em 0;
+}
