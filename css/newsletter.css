@@ -110,8 +110,12 @@ aside li {
 
   /* 2nd media query*/
   @media only screen and (max-width: 480px) {
-    body {
-      font-size: 90%;
+    main {
+      font-size: 85%;
+      padding: 0;
+    }
+    header {
+      font-size: 75%;
     }
     table {
       margin: 2em 2dvb;

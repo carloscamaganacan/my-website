@@ -94,6 +94,9 @@ footer {
 }
 /* 3rd media query (383 pixels or less) */
 @media only screen and (max-width: 480px) {
+  header {
+    font-size: 75%;
+  }
   aside {
     float: none;
     width: 100%;

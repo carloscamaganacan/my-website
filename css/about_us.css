@@ -208,7 +208,14 @@ back {
 }
 
 /* 2nd media query*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
+  main {
+    font-size: 85%;
+    padding: 0;
+  }
+  header {
+    font-size: 75%;
+  }
   section h1 {
     padding: 25px 0;
   }
@@ -247,12 +254,5 @@ back {
   }
   .group p {
     font-size: 88%;
-  }
-  main {
-    font-size: 85%;
-    padding: 0;
-  }
-  header {
-    font-size: 75%;
   }
 }
