@@ -39,7 +39,7 @@ body {
 a:hover {
   font-style: italic;
   color: white;
-  background-color: var(--color-8);
+  background-color: var(--color-1);
 }
 /* the styles for the header */
 header {

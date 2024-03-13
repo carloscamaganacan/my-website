@@ -1,7 +1,7 @@
 /* Background image for the main page */
 body {
   width: 100%;
-  height: max-content;
+  height: 69%;
   background: url("../images/Background_Image.jpg") no-repeat scroll center;
   background-size: cover;
 }
@@ -32,7 +32,7 @@ aside img {
   grid-area: image;
   width: 100%;
   height: auto;
-  padding-bottom: 4em;
+  padding-bottom: 4.2em;
 }
 #mobile_menu {
   display: none; /* turn off Slicknav menu */
