@@ -151,8 +151,8 @@ header {
 }
 #nav_menu ul li a.current {
   color: var(--color-3);
-  text-decoration:underline;
+  text-decoration: underline;
 }
 #nav_menu a:active {
- text-decoration:underline;
+  text-decoration: underline;
 }

@@ -6,6 +6,7 @@ main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding-bottom: 23.5em;
+  /* style for page title and quote*/
   h2 {
     font-size: 1.7em;
     margin-top: 2em;
@@ -18,21 +19,8 @@ main {
 #mobile_menu {
   display: none; /* Turn off slicknav menu */
 }
-
 /* 1st media query */
-@media only screen and (max-width: 1029px) {
-  header {
-    padding-bottom: 1.5 em;
-    display: grid;
-    grid-template: repeat(3, auto) / 1fr, 1fr;
-    grid-gap: 0.5em;
-    justify-items: center;
-  }
-  main {
-    margin: .5em;
-    h2 {font-size: 1.em;}
-    p  {font-size: .9em;}
-  }
+@media only screen and (max-width: 1045px) {
   #nav_menu {
     display: none; /* Turn off nav menu */
   }
@@ -43,33 +31,37 @@ main {
   .slicknav_menu {
     main {
       float: none;
-      padding: 1.5%;
-      width: 100%;
+      padding: 2.5%;
+      width: 95%;
     }
     background-color: var(--color-8) !important;
   }
+  main {
+    margin: 0.5em;
+    h2 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+  }
 }
-
 /* 2nd media query*/
 @media only screen and (max-width: 748px) {
   main {
     margin: 0;
     font-size: 95%;
   }
-  header img {
-    float: none;
-    size: 50%;
-  }
 }
-
 /* 3rd media query*/
-@media only screen and (max-width: 480px) {
-  main {
-    font-size: 85%;
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 0;
+    font-size: 90%;
     padding: 0;
   }
   header {
-    font-size: 1em;
+    font-size: 75%;
   }
   footer p {
     font-size: 1em;

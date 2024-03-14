@@ -5,28 +5,24 @@ body {
   background: url("../images/Background_Image.jpg") no-repeat scroll center;
   background-size: cover;
 }
-
 /* The style for the aside */
 aside {
   margin: 0;
   grid-area: aside;
   width: 39%;
-  height: 88%;
+  height: 83%;
   background-color: var(--color-7);
 }
-
 aside h2 {
   padding-top: 0.5em;
   margin: 0 1em;
   font-size: 300%;
 }
-
 aside p {
   font-size: 150%;
   margin: 1em 2em;
   color: var(--color-4);
 }
-
 aside img {
   font-size: 300%;
   grid-area: image;
@@ -37,7 +33,6 @@ aside img {
 #mobile_menu {
   display: none; /* turn off Slicknav menu */
 }
-
 /* 1st media query */
 @media only screen and (max-width: 1307px) {
   aside h1 {
@@ -48,9 +43,8 @@ aside img {
     font-size: 110%; /* Reduce the p font size to 95% */
   }
 }
-
 /* 2nd media query */
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1045px) {
   header {
     display: grid;
     grid-template: repeat(3, auto) / 100%;
@@ -65,12 +59,12 @@ aside img {
     display: block; /* display Slicknav menu */
     grid-area: navi;
   }
-
+  /* the style for slicknav menu */
   .slicknav_menu {
-    /* Slicknav menu setting */
     main {
       float: none;
-      width: 100%;
+      padding: 2.5%;
+      width: 95%;
     }
     background-color: var(--color-8) !important;
   }
@@ -78,7 +72,6 @@ aside img {
   body {
     margin: 0;
   }
-
   /* adjust aside setting */
   aside {
     margin: 0;
@@ -92,8 +85,13 @@ aside img {
 footer {
   margin-top: 0;
 }
-/* 3rd media query (383 pixels or less) */
-@media only screen and (max-width: 480px) {
+/* 3rd media query (500 pixels or less) */
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 0;
+    font-size: 90%;
+    padding: 0;
+  }
   header {
     font-size: 75%;
   }

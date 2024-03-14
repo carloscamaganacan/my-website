@@ -60,29 +60,19 @@ aside li {
   margin: 0 5dvb;
   color: var(--color-5);
 }
-
 #mobile_menu {
   display: none; /* turn off Slicknav menu */
 }
-
 /* 1st media query*/
 @media only screen and (max-width: 1045px) {
-  header {
-    padding-bottom: 1.5 em;
-    display: grid;
-    grid-template: repeat(3, auto) / 1fr;
-    grid-gap: 0.5em;
-    justify-items: center;
-    text-align: center;
-  }
   #nav_menu {
-    display: none; /* turn off Slicknav menu */
+    display: none; /* turn off Nav menu */
   }
   #mobile_menu {
     display: block; /* display Slicknav menu */
   }
+  /* the style for slicknav menu */
   .slicknav_menu {
-    /* Slicknav menu setting */
     main {
       float: none;
       padding: 2.5%;
@@ -90,35 +80,22 @@ aside li {
     }
     background-color: var(--color-8) !important;
   }
-
-  main {
-    margin: 0;
-    grid-template: auto auto / 1fr;
-    grid-gap: 0.5em;
-    grid-template-areas:
-      "top"
-      "bottom";
-  }
-  aside {
-    grid-area: top;
-    margin: 0;
-  }
   aside li {
     margin: 0 4dvb;
     color: var(--color-5);
   }
-
   /* 2nd media query*/
-  @media only screen and (max-width: 480px) {
-    main {
-      font-size: 85%;
+  @media only screen and (max-width: 500px) {
+    body {
+      margin: 0;
+      font-size: 90%;
       padding: 0;
     }
     header {
       font-size: 75%;
     }
     table {
-      margin: 2em 2dvb;
+      margin: 0 1em;
       border: 1px solid var(--color-5);
       border-collapse: collapse;
     }
@@ -134,11 +111,6 @@ aside li {
       margin: 0;
       line-height: 0;
     }
-
-    table {
-      margin: 0 1em;
-    }
-
     footer p {
       font-size: 1em;
     }
