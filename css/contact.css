@@ -85,13 +85,17 @@ input[type="submit"] {
     font-size: 90%;
     padding: 0;
   }
+  main {
+    margin: 1em 0 0 0;
+    padding-bottom: 0;
+  }
   header {
     font-size: 75%;
   }
   .container {
     width: 90%;
     padding: 0;
-    margin: 2em 1em;
+    margin: 0 1em;
   }
   footer p {
     font-size: 1em;
@@ -99,9 +103,6 @@ input[type="submit"] {
 }
 /* 3rd media query*/
 @media only screen and (max-width: 400px) {
-  textarea {
-    font-size: 85%;
-  }
   .container {
     width: 85%;
     padding: 0;
@@ -110,10 +111,6 @@ input[type="submit"] {
 }
 /* 4th media query */
 @media only screen and (max-width: 300px) {
-  textarea {
-    margin-top: 1em;
-    font-size: 75%;
-  }
   .container {
     margin: 0;
     text-align: center;
