@@ -11,11 +11,11 @@ aside {
   margin: 0;
   grid-area: aside;
   width: 39%;
-  height: 82%;
+  height: 88%;
   background-color: var(--color-7);
 }
 
-aside h1 {
+aside h2 {
   padding-top: 0.5em;
   margin: 0 1em;
   font-size: 300%;
