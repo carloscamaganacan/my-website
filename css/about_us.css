@@ -1,4 +1,4 @@
-/* the styles for the main */
+/* The style for the main */
 main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-size-adjust: 100%;
@@ -9,15 +9,13 @@ main {
   grid-template: repeat (3 auto) / 1fr 30%;
   /* grid-gap: 2.5%; */
 }
-
-/* style for the link to top of page */
+/* Style for the link to top of page */
 .linktop {
   margin: 10px, 0;
   padding: 10px 0;
   text-align: center;
 }
-
-/* the styles for the main */
+/* Style for the section Title */
 section h1 {
   padding-top: 70px;
   padding-bottom: 1em;
@@ -26,7 +24,6 @@ section h1 {
   line-height: 1;
   text-align: center;
 }
-
 /* Style for the Our History Section */
 .history {
   display: flex;
@@ -48,7 +45,6 @@ section h1 {
   height: 400px;
   margin: 10px;
 }
-
 /* Style for the Our Mission Section */
 .mission {
   display: flex;
@@ -70,7 +66,6 @@ section h1 {
   height: 400px;
   margin: 10px;
 }
-
 /* Style for Meet the Team Section */
 .team-container {
   display: flex;
@@ -140,11 +135,9 @@ back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
 .front {
   z-index: 2;
 }
-
 .back {
   color: var(--color-3);
   background-color: var(--color-2);

@@ -3,16 +3,13 @@ main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
   margin: 4em 1%;
-  grid-area: main;
-  display: grid;
-  grid-template: 3 auto / auto;
-  grid-gap: 2%;
+  padding-bottom: 14em; /*set white spaces between footer and the container*/
 }
 .container {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
   align-content: center;
 }
 .container h1 {
@@ -53,21 +50,11 @@ input[type="submit"] {
   display: table;
   clear: both;
 }
-footer {
-  position: fixed;
-}
 #mobile_menu {
   display: none; /* turn off Slicknav menu */
 }
 /* 1st media query*/
 @media screen and (max-width: 1045px) {
-  header {
-    padding-bottom: 1.5 em;
-    display: grid;
-    grid-template: repeat(3, auto) / 1fr;
-    grid-gap: 0.5em;
-    justify-items: center;
-  }
   main {
     margin: 4em 1%;
     h2,

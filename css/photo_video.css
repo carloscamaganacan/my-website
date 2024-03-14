@@ -5,7 +5,7 @@ main {
   background-size: cover;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  padding-bottom: 23.5em;
+  padding-bottom: 23.5em; /*set white spaces between footer and the carousel*/
   /* style for page title and quote*/
   h2 {
     font-size: 1.7em;
