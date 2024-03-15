@@ -5,6 +5,9 @@ body {
   background-size: cover;
 }
 /* The style for the aside */
+main {
+  padding-bottom: 23.em;
+}
 aside {
   margin: 0;
   grid-area: aside;
@@ -59,10 +62,6 @@ aside img {
     }
     background-color: var(--color-8) !important;
   }
-  /* adjust body margin to none */
-  body {
-    margin: 0;
-  }
   /* adjust aside setting */
   aside {
     margin: 0;
@@ -90,6 +89,7 @@ footer {
     float: none;
     width: 100%;
     font-size: 85%;
+    height: 82%;
   }
   aside image {
     padding: 0;
