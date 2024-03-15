@@ -1,7 +1,6 @@
 /* Background image for the main page */
 body {
   width: 100%;
-  height: 69%;
   background: url("../images/Background_Image.jpg") no-repeat scroll center;
   background-size: cover;
 }
@@ -10,7 +9,7 @@ aside {
   margin: 0;
   grid-area: aside;
   width: 39%;
-  height: 83%;
+  height: 82%;
   background-color: var(--color-7);
 }
 aside h2 {
@@ -45,19 +44,11 @@ aside img {
 }
 /* 2nd media query */
 @media only screen and (max-width: 1045px) {
-  header {
-    display: grid;
-    grid-template: repeat(3, auto) / 100%;
-    grid-gap: 0.5em;
-    justify-items: center;
-    text-align: center;
-  }
   #nav_menu {
     display: none; /* hide navigational menu */
   }
   #mobile_menu {
     display: block; /* display Slicknav menu */
-    grid-area: navi;
   }
   /* the style for slicknav menu */
   .slicknav_menu {

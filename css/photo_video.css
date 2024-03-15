@@ -22,10 +22,10 @@ main {
 /* 1st media query */
 @media only screen and (max-width: 1045px) {
   #nav_menu {
-    display: none; /* Turn off nav menu */
+    display: none; /* hide navigational menu */
   }
   #mobile_menu {
-    display: block; /* Turn on slicknav menu */
+    display: block; /* display Slicknav menu */
   }
   /* the style for slicknav menu */
   .slicknav_menu {
@@ -64,7 +64,7 @@ main {
     }
   }
   main {
-    padding-bottom: 1em;  
+    padding-bottom: 1em;
   }
   header {
     font-size: 75%;
