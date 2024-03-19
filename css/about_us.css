@@ -1,4 +1,3 @@
-/* The style for the main */
 main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-size-adjust: 100%;
@@ -151,7 +150,7 @@ back {
   display: none; /* hide navigational menu */
 }
 /* 1st media query */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1045px) {
   #nav_menu {
     display: none; /* hide navigational menu */
   }

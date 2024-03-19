@@ -6,13 +6,13 @@ body {
 }
 /* The style for the aside */
 main {
-  padding-bottom: 23.em;
+  padding-bottom: 3.85em;
 }
 aside {
   margin: 0;
   grid-area: aside;
   width: 39%;
-  height: 82%;
+  height: auto;
   background-color: var(--color-7);
 }
 aside h2 {
@@ -30,7 +30,7 @@ aside img {
   grid-area: image;
   width: 100%;
   height: auto;
-  padding-bottom: 4.2em;
+  padding-bottom: 2.85em;
 }
 #mobile_menu {
   display: none; /* turn off Slicknav menu */

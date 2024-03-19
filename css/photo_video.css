@@ -1,7 +1,6 @@
 /* the styles for main */
 main {
   width: 100%;
-  background-size: cover;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding-bottom: 23.5em; /*set white spaces between footer and the carousel*/
